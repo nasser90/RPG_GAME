@@ -31,7 +31,7 @@
     <object>objects\transition_system</object>
     <object>objects\collision_system</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_NBC_Base</object>
+    <object>objects\obj_NPC_Base</object>
     <object>objects\obj_enemy_base</object>
     <object>objects\obj_massagebox</object>
   </objects>
