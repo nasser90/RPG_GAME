@@ -25,10 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = "idle";
+            <string>/// creating variables
+state = "idle";
 spd = 4;
 cx=0;
 cy=0;
+hp = 10;
+
 </string>
           </argument>
         </arguments>
