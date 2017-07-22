@@ -10,6 +10,7 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_sqr</sprite>
     <sprite>sprites\spr_sqr_final</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
