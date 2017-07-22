@@ -26,13 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// creating variables
-state = "idle";
-spd = 4;
-cx=0;
-cy=0;
-hp = 10;
+state = "idle"; // Example attack,move,idle
+spd = 4; // the speed the char moves at
+cx=0;  // the change of x axis
+cy=0;// the change of y axis
+hp = 10; // health points
 
-iframes=0;
+iframes=0; // invornabilty frames, the frames which the obj cant be hit
 
 </string>
           </argument>
@@ -93,12 +93,12 @@ iframes=0;
         break;
     }
 }
-show_debug_message(iframes);
 
+// moving char
 x+= cx;
 y+= cy;
 
-iframes--;
+iframes--; 
 
 </string>
           </argument>
@@ -122,7 +122,10 @@ iframes--;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(iframes &gt;0 &amp;&amp; iframes % 3 ==0){
+            <string>
+
+// flashing the obj when he cant be hit
+if(iframes &gt;0 &amp;&amp; iframes % 3 ==0){ 
     
 }
 else{
