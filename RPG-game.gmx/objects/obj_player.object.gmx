@@ -103,7 +103,6 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
 phy_position_x += cx;
 phy_position_y += cy;
 
-show_debug_message(iframes);
 iframes--; 
 
 

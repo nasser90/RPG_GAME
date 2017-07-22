@@ -14,8 +14,6 @@
     <sprite>sprites\spr_player_up</sprite>
     <sprite>sprites\spr_NPC</sprite>
     <sprite>sprites\spr_Monster</sprite>
-    <sprite>sprites\sprite6</sprite>
-    <sprite>sprites\sprite7</sprite>
     <sprite>sprites\spr_messagebox</sprite>
   </sprites>
   <backgrounds name="background">
