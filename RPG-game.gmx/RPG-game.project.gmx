@@ -12,6 +12,7 @@
     <sprite>sprites\spr_NPC</sprite>
     <sprite>sprites\spr_Monster</sprite>
     <sprite>sprites\sprite6</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -19,6 +20,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\checkmoveinput.gml</script>
+    <script>scripts\movetoward.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\collision_system</object>
@@ -28,6 +30,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
+    <room>rooms\rom_villagefight</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
