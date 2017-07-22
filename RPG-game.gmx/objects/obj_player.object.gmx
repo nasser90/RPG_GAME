@@ -156,7 +156,7 @@ else{
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>35,50</point>
-    <point>50,50</point>
+    <point>32,32</point>
+    <point>30,50</point>
   </PhysicsShapePoints>
 </object>
