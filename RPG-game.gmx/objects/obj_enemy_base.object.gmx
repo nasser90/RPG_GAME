@@ -31,6 +31,7 @@ hp = 0;
 spd = 4;
 state="idle";
 damage= 2;
+facing = 3;
 </string>
           </argument>
         </arguments>
@@ -53,7 +54,39 @@ damage= 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>
+if ( instance_exists( obj_player)){
+    if(distance_to_object(obj_player) &lt;= 64){
+        speed =0;
+        phy_position_x = movetoward( phy_position_x,obj_player. phy_position_x,0.5);
+         phy_position_y = movetoward( phy_position_y,obj_player. phy_position_y,0.5);
+    }
+    else {
+         switch(direction ){ // not working
+            case 0 :{
+                phy_position_x = movetoward( phy_position_x, phy_position_x,0.5);
+                phy_position_y = movetoward( phy_position_y, phy_position_y - 10,0.5);
+            }
+            case 1 :{
+                phy_position_x = movetoward( phy_position_x, phy_position_x + 10,0.5);
+                phy_position_y = movetoward( phy_position_y, phy_position_y ,0.5);
+            }
+            case 2 :{
+                phy_position_x = movetoward( phy_position_x, phy_position_x,0.5);
+                phy_position_y = movetoward( phy_position_y, phy_position_y + 10,0.5);
+            }
+            case 3 :{
+                phy_position_x = movetoward( phy_position_x, phy_position_x - 10,0.5);
+                phy_position_y = movetoward( phy_position_y, phy_position_y ,0.5);
+            }
+         }
+         if(irandom(100)&lt;2){
+            facing = irandom(3);
+         }
+    }
+}
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -81,7 +114,6 @@ damage= 2;
         iframes = 60;
     }
 }
-show_debug_message("123");
 </string>
           </argument>
         </arguments>
