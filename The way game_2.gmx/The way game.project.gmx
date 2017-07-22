@@ -25,6 +25,8 @@
     <room>rooms\rom_stage_1</room>
     <room>rooms\rom_stage_2</room>
     <room>rooms\rom_stage_3</room>
+    <room>rooms\rom_stage_4</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
