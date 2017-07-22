@@ -78,7 +78,7 @@ damage= 2;
             <string>with(other){
     if(iframes &lt;= 0){
         hp -= other.damage;
-        iframes = 30;
+        iframes = 60;
     }
 }
 show_debug_message("123");
@@ -100,9 +100,9 @@ show_debug_message("123");
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>75,86</point>
-    <point>15,86</point>
+    <point>48,64</point>
+    <point>15,64</point>
     <point>15,0</point>
-    <point>75,0</point>
+    <point>48,0</point>
   </PhysicsShapePoints>
 </object>

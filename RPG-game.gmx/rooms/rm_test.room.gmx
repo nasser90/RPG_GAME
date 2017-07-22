@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
@@ -52,8 +52,8 @@
   </views>
   <instances>
     <instance objName="obj_player" x="128" y="384" name="inst_9D2B7F0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="192" y="256" name="inst_AD8919C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="128" y="256" name="inst_FB72624E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="192" y="224" name="inst_AD8919C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="128" y="224" name="inst_FB72624E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="128" y="192" name="inst_E84A35A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="192" y="128" name="inst_49B35686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="192" y="192" name="inst_A357F8EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -86,8 +86,8 @@
     <instance objName="collision_system" x="768" y="0" name="inst_D22116A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="832" y="0" name="inst_1B231967" locked="0" code="" scaleX="18" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="480" y="192" name="inst_D59736C0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="352" y="160" name="inst_281AF6B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="288" y="160" name="inst_6CB6DA1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="352" y="128" name="inst_281AF6B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="288" y="128" name="inst_6CB6DA1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="288" y="224" name="inst_8122DCD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="352" y="224" name="inst_75FDE837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="704" y="480" name="inst_CFB5A21D" locked="0" code="" scaleX="20.3174610137939" scaleY="3.53968262672424" colour="4294967295" rotation="0"/>
