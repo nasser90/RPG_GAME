@@ -64,7 +64,6 @@ hp = 10;
     }
     case "up":{
         image_speed = 0.2;
-        image_angle = 180;
         checkmoveinput();
         cy= -spd;
         cx=0;
@@ -72,7 +71,6 @@ hp = 10;
     }
     case "right":{
         image_speed = 0.2;
-        image_angle = 90;
         checkmoveinput();
         cx = spd
         cy=0;
@@ -80,7 +78,6 @@ hp = 10;
     }
     case "down":{
         image_speed = 0.2;
-        image_angle = 0;
         checkmoveinput();
         cy = spd;
         cx=0;
@@ -88,7 +85,6 @@ hp = 10;
     }
     case "left":{
         image_speed = 0.2;
-        image_angle = 270;
         checkmoveinput();
         cx = -spd;
         cy=0;
