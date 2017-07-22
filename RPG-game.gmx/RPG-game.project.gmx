@@ -25,7 +25,9 @@
     <object>objects\obj_NBC_Base</object>
     <object>objects\obj_enemy_base</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\rm_test</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
