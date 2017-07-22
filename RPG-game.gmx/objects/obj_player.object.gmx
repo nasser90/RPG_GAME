@@ -95,8 +95,8 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
 }
 
 // moving char
-x+= cx;
-y+= cy;
+phy_position_x += cx;
+phy_position_y += cy;
 
 iframes--; 
 

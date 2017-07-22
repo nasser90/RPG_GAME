@@ -57,7 +57,6 @@
     <instance objName="collision_system" x="128" y="192" name="inst_E84A35A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="192" y="128" name="inst_49B35686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="192" y="192" name="inst_A357F8EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
     <instance objName="collision_system" x="128" y="128" name="inst_343078AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="0" y="0" name="inst_EF4F0476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="64" y="0" name="inst_90E73054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -92,8 +91,6 @@
     <instance objName="collision_system" x="288" y="224" name="inst_8122DCD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="352" y="224" name="inst_75FDE837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="704" y="480" name="inst_CFB5A21D" locked="0" code="" scaleX="20.3174610137939" scaleY="3.53968262672424" colour="4294967295" rotation="0"/>
-=======
->>>>>>> master
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
