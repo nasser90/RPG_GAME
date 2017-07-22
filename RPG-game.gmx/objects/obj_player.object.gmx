@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -63,15 +63,15 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
        // sprite_index= spr_player;
         checkmoveinput();
         cx =0;
-        cy=0;
+        cy =0;
         break;
     }
     case "up":{
         image_speed = 0.2;
         sprite_index= spr_player_up;
         checkmoveinput();
-        cy= -spd;
-        cx=0;
+        cy = -spd;
+        cx =0;
         break;
     }
     case "right":{
@@ -79,7 +79,7 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         image_speed = 0.2;
         checkmoveinput();
         cx = spd
-        cy=0;
+        cy =0;
         break;
     }
     case "down":{
@@ -87,7 +87,7 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         image_speed = 0.2;
         checkmoveinput();
         cy = spd;
-        cx=0;
+        cx =0;
         break;
     }
     case "left":{
@@ -95,14 +95,16 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         image_speed = 0.2;
         checkmoveinput();
         cx = -spd;
-        cy=0;
+        cy =0;
         break;
     }
 }
 
 // moving obj
+
 phy_position_x += cx;
 phy_position_y += cy;
+
 
 iframes--; 
 

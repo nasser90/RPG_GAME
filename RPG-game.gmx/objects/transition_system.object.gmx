@@ -50,9 +50,11 @@ room_dist = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_player){
-    instance_destroy();
+            <string>with(other){
+    //instance_destroy();
 }
+
+
 room_goto(room_dist);
 </string>
           </argument>
