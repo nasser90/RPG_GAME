@@ -18,6 +18,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sqr</object>
     <object>objects\obj_sqr_final</object>
+    <object>objects\test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
