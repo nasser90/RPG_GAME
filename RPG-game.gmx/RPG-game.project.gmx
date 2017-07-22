@@ -11,6 +11,7 @@
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\spr_NPC</sprite>
     <sprite>sprites\spr_Monster</sprite>
+    <sprite>sprites\sprite6</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

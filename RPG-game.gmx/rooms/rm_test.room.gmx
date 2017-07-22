@@ -64,6 +64,7 @@
     <instance objName="collision_system" x="128" y="224" name="inst_37A18F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="192" y="256" name="inst_AD8919C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="96" y="288" name="inst_0CE6BFFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_base" x="256" y="384" name="inst_C726B0FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
