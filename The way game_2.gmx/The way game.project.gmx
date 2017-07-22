@@ -11,6 +11,7 @@
     <sprite>sprites\spr_sqr</sprite>
     <sprite>sprites\spr_sqr_final</sprite>
     <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\sprite6</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,11 +20,11 @@
     <object>objects\obj_player</object>
     <object>objects\obj_sqr</object>
     <object>objects\obj_sqr_final</object>
-    <object>objects\test</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
+    <room>rooms\rom_stage_1</room>
+    <room>rooms\rom_stage_2</room>
+    <room>rooms\rom_stage_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
