@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="collision_system" x="290" y="610" name="inst_CAEC968B" locked="0" code="" scaleX="0.5799999833107" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="64" y="64" name="inst_D4935F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="320" w="64" h="64" xo="64" yo="384" id="10000006" name="inst_49E9FDB7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
