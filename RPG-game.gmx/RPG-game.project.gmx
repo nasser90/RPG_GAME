@@ -21,7 +21,7 @@
     <object>objects\obj_NBC_Base</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\wow</room>
+    <room>rooms\rm_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
