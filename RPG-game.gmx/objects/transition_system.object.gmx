@@ -50,7 +50,14 @@ room_dist = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_dist);
+
+            <string>with(other){
+    //instance_destroy();
+}
+
+
+room_goto(room_dist);
+
 </string>
           </argument>
         </arguments>
