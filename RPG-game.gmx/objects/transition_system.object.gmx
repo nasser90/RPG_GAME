@@ -50,7 +50,6 @@ room_dist = "";
         <arguments>
           <argument>
             <kind>1</kind>
-
             <string>with(other){
     //instance_destroy();
 }
