@@ -57,56 +57,19 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(state){
-    case "idle":{
-        image_speed = 0;
-       // sprite_index= spr_player;
-        checkmoveinput();
-        cx =0;
-        cy=0;
-        break;
-    }
-    case "up":{
-        image_speed = 0.2;
-        sprite_index= spr_player_up;
-        checkmoveinput();
-        cy= -spd;
-        cx=0;
-        break;
-    }
-    case "right":{
-        sprite_index= spr_player_right;
-        image_speed = 0.2;
-        checkmoveinput();
-        cx = spd
-        cy=0;
-        break;
-    }
-    case "down":{
-        sprite_index= spr_player_down;
-        image_speed = 0.2;
-        checkmoveinput();
-        cy = spd;
-        cx=0;
-        break;
-    }
-    case "left":{
-        sprite_index= spr_player_left;
-        image_speed = 0.2;
-        checkmoveinput();
-        cx = -spd;
-        cy=0;
-        break;
-    }
+            <string>if(keyboard_check(vk_up)){
+    phy_position_y -= 2;
 }
 
-// moving obj
-phy_position_x += cx;
-phy_position_y += cy;
-
-iframes--; 
-
-
+else if(keyboard_check(vk_down)){
+    phy_position_y +=2;
+}
+else if(keyboard_check(vk_right)){
+    phy_position_x += 2;
+}
+else if(keyboard_check(vk_left)){
+    phy_position_x -= 2;
+}
 </string>
           </argument>
         </arguments>
@@ -193,6 +156,6 @@ else{
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
     <point>32,32</point>
-    <point>32,32</point>
+    <point>30,50</point>
   </PhysicsShapePoints>
 </object>
