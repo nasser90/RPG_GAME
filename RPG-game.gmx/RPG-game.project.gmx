@@ -5,11 +5,14 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_collision_system</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\object0</object>
+    <object>objects\collision_system</object>
   </objects>
   <help>
     <rtf>help.rtf</rtf>
