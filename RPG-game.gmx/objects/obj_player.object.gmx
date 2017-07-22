@@ -94,11 +94,13 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
     }
 }
 
-// moving char
+// moving obj
 phy_position_x += cx;
 phy_position_y += cy;
 
+show_debug_message(iframes);
 iframes--; 
+
 
 </string>
           </argument>
@@ -149,7 +151,7 @@ else{
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>32,64</point>
     <point>35,50</point>
+    <point>50,50</point>
   </PhysicsShapePoints>
 </object>
