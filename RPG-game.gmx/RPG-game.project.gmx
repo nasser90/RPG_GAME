@@ -13,6 +13,7 @@
   <objects name="objects">
     <object>objects\object0</object>
     <object>objects\collision_system</object>
+    <object>objects\obj_NBC_Base</object>
   </objects>
   <help>
     <rtf>help.rtf</rtf>
