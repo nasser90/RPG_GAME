@@ -17,11 +17,8 @@
   <objects name="objects">
     <object>objects\object0</object>
     <object>objects\collision_system</object>
-
     <object>objects\obj_player</object>
-
     <object>objects\obj_NBC_Base</object>
-
   </objects>
   <rooms name="rooms">
     <room>rooms\wow</room>
