@@ -90,7 +90,7 @@ missionI = 0; // the mission index that this NPC have
             <kind>1</kind>
             <string>/// drawing arrow and self
 
-if(!jobdone){
+if(!jobdone){ // drawing the arrow 
     if (obj_game.mission[missionI] == 0){
         draw_set_colour(c_red);
         draw_set_font(fnt_default);
@@ -98,32 +98,25 @@ if(!jobdone){
     }
 }
 if(talking ==0 &amp;&amp; timer &lt;= 0){
-    obj_game.canMove = true;
     if(instance_exists(obj_player)){
         if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
-            if(!jobdone){
-                with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_massagebox)){
+            with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_massagebox)){ // drawing massege box
                     xscale = 19;
                     yscale = 10;
-                }
-                talking = 1;
-                obj_game.mission[missionI] =1;
-                timer =60;     
             }
-            else
-                show_message(textMessage);
-                talking = 1;
-                timer =60;
+            obj_game.mission[missionI] =1; // assigning the mission 
+            talking = 1;
+            timer =60;
         }
     }
 }
-else {
-    obj_game.canMove = false;
+else { 
+    if(talking ==1) obj_game.canMove = false;
     draw_set_colour(c_white);
-    draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
-    if(input.A &amp;&amp; timer &lt;=0){
-        with(obj_massagebox)
-        instance_destroy();
+    if(!jobdone) draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
+    else draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
+    if(input.A &amp;&amp; timer &lt;=0){ 
+        with(obj_massagebox) instance_destroy();
         talking =0;
         obj_game.canMove = true;
         timer =10;
