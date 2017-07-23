@@ -58,7 +58,11 @@
       <object>objects\collision_system</object>
       <object>objects\obj_game</object>
       <object>objects\input</object>
+<<<<<<< Updated upstream
       <object>objects\obj_title</object>
+=======
+      <object>objects\obj_messageBox_nasser</object>
+>>>>>>> Stashed changes
     </objects>
   </objects>
   <rooms name="rooms">
