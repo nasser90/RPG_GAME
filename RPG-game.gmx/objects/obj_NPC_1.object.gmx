@@ -55,7 +55,7 @@ event_inherited();
 
 if(obj_game.mission[missionI] == 1 &amp;&amp; !InsCre){
     with(instance_create(330,270,transition_system)){
-    room_dist = 3;
+    room_dist = rm_home_2;
     x_dist = 224;
     y_dist = 352;
     }

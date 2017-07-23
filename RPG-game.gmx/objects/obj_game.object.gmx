@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>/// Creating the game variables
 
+state_int();
+
 inRoom =0;
 canMove = true;
 
@@ -58,7 +60,9 @@ for(i =0;i&lt;10;i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>state_process(st_title);
+show_debug_message(state);
+</string>
           </argument>
         </arguments>
       </action>

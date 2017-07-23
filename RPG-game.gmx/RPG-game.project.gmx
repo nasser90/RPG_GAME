@@ -16,15 +16,27 @@
     <sprite>sprites\spr_Monster</sprite>
     <sprite>sprites\spr_messagebox</sprite>
     <sprite>sprites\spr_trans</sprite>
-    <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\spr_title</sprite>
+    <sprite>sprites\spr_water</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\bck_water</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\checkmoveinput.gml</script>
     <script>scripts\movetoward.gml</script>
+    <scripts name="state_machine">
+      <script>scripts\state_int.gml</script>
+      <script>scripts\state_switch.gml</script>
+      <script>scripts\state_process.gml</script>
+    </scripts>
+    <scripts name="states">
+      <script>scripts\st_title.gml</script>
+      <script>scripts\st_Menu.gml</script>
+      <script>scripts\st_ingame.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -46,9 +58,12 @@
       <object>objects\collision_system</object>
       <object>objects\obj_game</object>
       <object>objects\input</object>
+      <object>objects\obj_title</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_title</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_villagefight</room>
     <room>rooms\rm_home_1</room>

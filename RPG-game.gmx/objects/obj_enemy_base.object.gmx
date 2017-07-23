@@ -126,7 +126,7 @@ if ( instance_exists( obj_player)){
             <string>with(other){
     if(iframes &lt;= 0){
         with(instance_create(phy_position_x,phy_position_y,transition_system)){
-            room_dist = 1;
+            room_dist = rm_villagefight;
             
             x_dist = 80;
             y_dist =300;
