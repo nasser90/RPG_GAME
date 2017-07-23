@@ -95,7 +95,9 @@ image_index = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>if(show_question("Are you sure?")){
+    game_end();
+}
 </string>
           </argument>
         </arguments>
