@@ -104,7 +104,7 @@ if(talking ==0 &amp;&amp; timer &lt;= 0){
                     xscale = 19;
                     yscale = 10;
             }
-            obj_game.mission[missionI] =1; // assigning the mission 
+             
             talking = 1;
             timer =60;
         }
@@ -116,6 +116,12 @@ else {
     if(!jobdone) draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
     else draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
     if(input.A &amp;&amp; timer &lt;=0){ 
+        obj_game.mission[missionI] = 1; // assigning the mission
+        with(obj_massagebox) instance_destroy();
+        talking =0;
+        obj_game.canMove = true;
+        timer =10;
+    }else if(input.B &amp;&amp; timer &lt;=0){
         with(obj_massagebox) instance_destroy();
         talking =0;
         obj_game.canMove = true;

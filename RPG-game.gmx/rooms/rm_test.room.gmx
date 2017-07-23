@@ -110,6 +110,8 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="collision_system" x="292" y="611" name="inst_5097B974" locked="0" code="" scaleX="0.550000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_1" x="672" y="160" name="inst_21E4A90B" locked="0" code="    &#xA;    textMessageJob = &quot;Hello.. Can you help me. there is a monster in my house , My house is the one on the right can you please do somthing about it&quot;;&#xA;    jobdone = false;&#xA;    textMessage = &quot; Cant talk right now I am busy looking at the tree&quot;;&#xA;    intract = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="transition_system" x="168" y="272" name="inst_EF86F646" locked="0" code="    room_dist = 2;&#xA;    x_dist = 224;&#xA;    y_dist = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_base" x="1312" y="352" name="inst_49D4A8D4" locked="0" code="hp = 10;&#xA;spd = 1;&#xA;state = &quot;idle&quot;;&#xA;damage = 2;&#xA;facing = 3;&#xA;range = 64;&#xA;xst = 1312;&#xA;yst = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_base" x="1312" y="448" name="inst_590F38CC" locked="0" code="hp = 10;&#xA;spd = 1;&#xA;state = &quot;idle&quot;;&#xA;damage = 2;&#xA;facing = 3;&#xA;range = 64;&#xA;xst = 1312;&#xA;yst = 448;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
