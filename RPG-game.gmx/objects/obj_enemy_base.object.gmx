@@ -27,12 +27,14 @@
             <kind>1</kind>
             <string>/// creating variables
 
-hp = 0;
-spd = 4;
-state="idle";
-damage= 2;
-facing = 3;
-range =64;
+hp = 0; // health points
+spd = 1; // speed which the obj move each frame ( most likely )
+state = "idle"; 
+damage = 2; 
+facing = 3; // the direction the obj move at 
+range = 64; 
+xst = 0; // the x-axis where the monster starts
+xst = 0; // the y-axis where the monster starts
 </string>
           </argument>
         </arguments>
@@ -58,31 +60,43 @@ range =64;
             <string>
 if ( instance_exists( obj_player)){
     if(distance_to_object(obj_player) &lt;= range){
-        speed =0;
-        phy_position_x = movetoward( phy_position_x,obj_player. phy_position_x,0.5);
-         phy_position_y = movetoward( phy_position_y,obj_player. phy_position_y,0.5);
+    
+        phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
+         phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
     }
     else {
-         switch(facing ){ // not working
+         switch(facing ){ 
             case 0 :{
-                phy_position_x = movetoward( phy_position_x, phy_position_x,0.5);
-                phy_position_y = movetoward( phy_position_y, phy_position_y - 10,0.5);
+                cx = 0;
+                cy = -spd;
+                break;
             }
             case 1 :{
-                phy_position_x = movetoward( phy_position_x, phy_position_x + 10,0.5);
-                phy_position_y = movetoward( phy_position_y, phy_position_y ,0.5);
+                cx = spd;
+                cy = 0;
+                break;
             }
             case 2 :{
-                phy_position_x = movetoward( phy_position_x, phy_position_x,0.5);
-                phy_position_y = movetoward( phy_position_y, phy_position_y + 10,0.5);
+                cx = 0;
+                cy = spd;
+                break;
             }
             case 3 :{
-                phy_position_x = movetoward( phy_position_x, phy_position_x - 10,0.5);
-                phy_position_y = movetoward( phy_position_y, phy_position_y ,0.5);
+                cx = -spd;
+                cy = 0;
+                break;
             }
          }
-         if(irandom(100)&lt;2){
-            facing = irandom(3);
+         if(irandom(100) &lt; 2){
+            facing = choose(0,1,2,3);
+         }
+         if (!(phy_position_x + spd &gt; xst+192 || phy_position_x-spd &lt; xst -192 || phy_position_y+spd &gt; yst+192 || phy_position_y-spd &lt; yst-192)){
+            phy_position_x = movetoward( phy_position_x, phy_position_x + cx,spd);
+            phy_position_y = movetoward( phy_position_y, phy_position_y + cy,spd);
+         }
+         else{
+            phy_position_x = movetoward( phy_position_x, xst,spd);
+            phy_position_y = movetoward( phy_position_y, yst,spd);
          }
     }
 }
@@ -111,8 +125,12 @@ if ( instance_exists( obj_player)){
             <kind>1</kind>
             <string>with(other){
     if(iframes &lt;= 0){
-        hp -= other.damage;
-        iframes = 60;
+        with(instance_create(phy_position_x,phy_position_y,transition_system)){
+            room_dist = 1;
+            
+            x_dist = 80;
+            y_dist =300;
+        }        
     }
 }
 </string>

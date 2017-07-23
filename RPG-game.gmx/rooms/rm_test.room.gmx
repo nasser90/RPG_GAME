@@ -28,6 +28,16 @@ with(obj_player){
     phy_position_x = obj_game.pplayerx;
     phy_position_y = obj_game.pplayery;
     
+}
+
+with (instance_create(256,384,obj_enemy_base)){
+    hp = 13;
+    spd = 1;
+    state = "idle";
+    damage = 2;
+    facing =0;
+    xst = 256;
+    yst = 384;
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
