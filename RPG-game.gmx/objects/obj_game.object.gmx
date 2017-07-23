@@ -58,10 +58,7 @@ for(i =0;i&lt;10;i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

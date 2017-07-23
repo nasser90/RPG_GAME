@@ -97,7 +97,8 @@ if(!jobdone){
         draw_arrow(x,y-96 ,x,y-32 ,32);
     }
 }
-if(talking =0 &amp;&amp; timer &lt;= 0){
+if(talking ==0 &amp;&amp; timer &lt;= 0){
+    obj_game.canMove = true;
     if(instance_exists(obj_player)){
         if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
             if(!jobdone){
