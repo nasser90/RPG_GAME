@@ -28,8 +28,109 @@
             <string>/// Var
 textMessage = "TEXT HERE"; // text message when he talking to the player
 textMessageJob = "TEXT HERE"; // text message for asking the player to do somting.
-jobdone = 0; // Is he did the job or not .
+jobdone = false; // Is he did the job or not .
+intract = 0; // check if intraction started or not 
+timer =0;
+talking = false ; // 
+missionI = 0; // the mission index that this NPC have
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if(instance_exists(obj_player)){
+    if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
+        if(!jobdone){
+            show_message(textMessageJob);
+            intract = 1;        
+        }
+        else
+            show_message(textMessage);
+            intract = 1;
+    }
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// drawing arrow and self
 
+if(!jobdone){
+    if (obj_game.mission[missionI] == 0){
+        draw_set_colour(c_red);
+        draw_set_font(fnt_default);
+        draw_arrow(x,y-96 ,x,y-32 ,32);
+    }
+}
+if(talking =0 &amp;&amp; timer &lt;= 0){
+    if(instance_exists(obj_player)){
+        if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
+            if(!jobdone){
+                with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_massagebox)){
+                    xscale = 19;
+                    yscale = 10;
+                }
+                talking = 1;
+                obj_game.mission[missionI] =1;
+                timer =60;     
+            }
+            else
+                show_message(textMessage);
+                talking = 1;
+                timer =60;
+        }
+    }
+}
+else {
+    obj_game.canMove = false;
+    draw_set_colour(c_white);
+    draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
+    if(input.A &amp;&amp; timer &lt;=0){
+        with(obj_massagebox)
+        instance_destroy();
+        talking =0;
+        obj_game.canMove = true;
+        timer =10;
+    }
+    
+}
+timer--;
+draw_self();
 </string>
           </argument>
         </arguments>
@@ -39,12 +140,12 @@ jobdone = 0; // Is he did the job or not .
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
+  <PhysicsObjectDensity>0</PhysicsObjectDensity>
+  <PhysicsObjectRestitution>0</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
-  <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
-  <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
-  <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
+  <PhysicsObjectLinearDamping>0</PhysicsObjectLinearDamping>
+  <PhysicsObjectAngularDamping>0</PhysicsObjectAngularDamping>
+  <PhysicsObjectFriction>0</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints/>

@@ -10,7 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>with(obj_player){
+    phy_position_x = 50;
+    phy_position_y = 50;
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -53,7 +56,22 @@
   <instances>
     <instance objName="collision_system" x="290" y="610" name="inst_CAEC968B" locked="0" code="" scaleX="0.5799999833107" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="transition_system" x="320" y="0" name="inst_D05B369C" locked="0" code="room_dist = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="64" y="64" name="inst_77B6FD55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="64" y="512" name="inst_FE355975" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="128" y="512" name="inst_418C2ED6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="192" y="512" name="inst_9289FD26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="256" y="512" name="inst_10BE39EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="320" y="512" name="inst_20E8455C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="384" y="512" name="inst_2EC73FA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="448" y="512" name="inst_69E455C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="512" y="512" name="inst_D0585A11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="576" y="512" name="inst_BFB91134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="640" y="512" name="inst_7BA5DE14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="704" y="512" name="inst_78864477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="768" y="512" name="inst_CB26A3C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="832" y="512" name="inst_791C4B1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="896" y="512" name="inst_FB715C78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="960" y="512" name="inst_43FAA7A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="0" y="576" name="inst_65FF9B22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="320" w="64" h="64" xo="64" yo="384" id="10000006" name="inst_49E9FDB7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

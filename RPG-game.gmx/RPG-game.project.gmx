@@ -25,17 +25,33 @@
     <script>scripts\checkmoveinput.gml</script>
     <script>scripts\movetoward.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_default</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\transition_system</object>
-    <object>objects\collision_system</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_NPC_Base</object>
-    <object>objects\obj_enemy_base</object>
-    <object>objects\obj_massagebox</object>
+    <objects name="NPC">
+      <object>objects\obj_NPC_Base</object>
+      <object>objects\obj_NPC_1</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Enemy">
+      <object>objects\obj_enemy_base</object>
+    </objects>
+    <objects name="game stuff">
+      <object>objects\transition_system</object>
+      <object>objects\obj_massagebox</object>
+      <object>objects\collision_system</object>
+      <object>objects\obj_game</object>
+      <object>objects\input</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
     <room>rooms\rm_villagefight</room>
+    <room>rooms\rm_home_1</room>
+    <room>rooms\rm_home_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

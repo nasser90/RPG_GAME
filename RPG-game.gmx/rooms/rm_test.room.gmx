@@ -10,7 +10,25 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>with(instance_create(672,160,obj_NPC_1)){
+    textMessageJob = "Hello.. Can you help me. there is a monster in my house , My house is the one on the right can you please do somthing about it";
+    jobdone = false;
+    textMessage = " Cant talk right now I am busy looking at the tree";
+    intract = 0;
+}
+
+with(instance_create(170,270,transition_system)){
+    room_dist = 2;
+    x_dist = 224;
+    y_dist = 352;
+}
+
+
+with(obj_player){
+    phy_position_x = obj_game.pplayerx;
+    phy_position_y = obj_game.pplayery;
+    
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -90,11 +108,10 @@
     <instance objName="collision_system" x="288" y="224" name="inst_8122DCD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="352" y="224" name="inst_75FDE837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="704" y="480" name="inst_CFB5A21D" locked="0" code="" scaleX="20.3174610137939" scaleY="3.53968262672424" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_base" x="288" y="416" name="inst_26F1BB8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="transition_system" x="320" y="288" name="inst_2D809352" locked="0" code="room_dist = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_NPC_Base" x="576" y="320" name="inst_C2802BAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_base" x="448" y="384" name="inst_D5C3EBC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="64" y="384" name="inst_8929817B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_game" x="32" y="160" name="inst_0E2B23E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="input" x="32" y="224" name="inst_0514923C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="292" y="611" name="inst_5097B974" locked="0" code="" scaleX="0.550000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
