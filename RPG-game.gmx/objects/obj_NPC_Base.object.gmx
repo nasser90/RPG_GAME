@@ -100,6 +100,7 @@ if(!jobdone){ // drawing the arrow
         draw_sprite(spr_on_quest,0,x,y-65);
     }
 }
+
 if(talking ==0 &amp;&amp; timer &lt;= 0){
     if(instance_exists(obj_player)){
         if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){

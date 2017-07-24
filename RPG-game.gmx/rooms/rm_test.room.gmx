@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1984</width>
   <height>704</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -65,20 +65,15 @@ with (instance_create(256,384,obj_enemy_base)){
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="collision_system" x="192" y="224" name="inst_AD8919C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="128" y="224" name="inst_FB72624E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="128" y="192" name="inst_E84A35A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="112" y="192" name="inst_AD8919C7" locked="0" code="" scaleX="2.26984119415283" scaleY="1.50793647766113" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="192" y="128" name="inst_49B35686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="192" y="192" name="inst_A357F8EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="128" y="128" name="inst_343078AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="0" y="0" name="inst_EF4F0476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="64" y="0" name="inst_90E73054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="0" y="64" name="inst_4FF73648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="64" y="64" name="inst_EF6AA221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="256" y="0" name="inst_2BAF1901" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="256" y="64" name="inst_6DE87A14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="320" y="0" name="inst_3FB00377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="320" y="64" name="inst_5704C19C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="264" y="0" name="inst_2BAF1901" locked="0" code="" scaleX="0.875" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="264" y="64" name="inst_6DE87A14" locked="0" code="" scaleX="0.875" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="448" y="0" name="inst_63AAE2C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="448" y="64" name="inst_BAEEBA3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="512" y="64" name="inst_BCA7BA51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -99,21 +94,25 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="collision_system" x="768" y="0" name="inst_D22116A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="832" y="0" name="inst_1B231967" locked="0" code="" scaleX="18" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="480" y="192" name="inst_D59736C0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="352" y="128" name="inst_281AF6B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="288" y="128" name="inst_6CB6DA1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="288" y="224" name="inst_8122DCD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="352" y="224" name="inst_75FDE837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="352" y="128" name="inst_281AF6B1" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="280" y="128" name="inst_6CB6DA1F" locked="0" code="" scaleX="1.12698411941528" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="280" y="224" name="inst_8122DCD2" locked="0" code="" scaleX="2.125" scaleY="1.125" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="704" y="480" name="inst_CFB5A21D" locked="0" code="" scaleX="20.3174610137939" scaleY="3.53968262672424" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="64" y="384" name="inst_8929817B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="292" y="611" name="inst_5097B974" locked="0" code="" scaleX="0.550000011920929" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_1" x="672" y="160" name="inst_21E4A90B" locked="0" code="    &#xA;    textMessageJob = &quot;Hello.. Can you help me. there is a monster in my house , My house is the one on the right can you please do somthing about it&quot;;&#xA;    jobdone = false;&#xA;    textMessage = &quot; Cant talk right now I am busy looking at the tree&quot;;&#xA;    intract = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="transition_system" x="168" y="272" name="inst_EF86F646" locked="0" code="    room_dist = rm_home_1;&#xA;    x_dist = 224;&#xA;    y_dist = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="transition_system" x="168" y="272" name="inst_EF86F646" locked="0" code="room_dist = rm_home_1;&#xA;x_dist = 224;&#xA;y_dist = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_base" x="1312" y="352" name="inst_49D4A8D4" locked="0" code="hp = 10;&#xA;spd = 1;&#xA;state = &quot;idle&quot;;&#xA;damage = 2;&#xA;facing = 3;&#xA;range = 64;&#xA;xst = 1312;&#xA;yst = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_base" x="1312" y="448" name="inst_590F38CC" locked="0" code="hp = 10;&#xA;spd = 1;&#xA;state = &quot;idle&quot;;&#xA;damage = 2;&#xA;facing = 3;&#xA;range = 64;&#xA;xst = 1312;&#xA;yst = 448;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< Updated upstream
     <instance objName="collision_system" x="-25" y="128" name="inst_F329A053" locked="0" code="" scaleX="0.5" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="0" y="701" name="inst_B8443EF9" locked="0" code="" scaleX="11" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="96" y="-23" name="inst_F536A643" locked="0" code="" scaleX="6" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="1977" y="316" name="inst_7AF09077" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="collision_system" x="320" y="0" name="inst_697E00EF" locked="0" code="" scaleX="0.375" scaleY="1.625" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="320" y="104" name="inst_84D64612" locked="0" code="" scaleX="0.875" scaleY="0.375" colour="4294967295" rotation="0"/>
+>>>>>>> Stashed changes
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
