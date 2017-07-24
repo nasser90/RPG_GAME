@@ -55,18 +55,7 @@ missionI = 0; // the mission index that this NPC have
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(instance_exists(obj_player)){
-    if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
-        if(!jobdone){
-            show_message(textMessageJob);
-            intract = 1;        
-        }
-        else
-            show_message(textMessage);
-            intract = 1;
-    }
-}*/
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -111,9 +100,9 @@ if(talking ==0 &amp;&amp; timer &lt;= 0){
             }
             */
             if(!jobdone) //draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
-            scr_text(textMessageJob,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
+            scr_text(textMessageJob,0.2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
             else //draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
-            scr_text(textMessage,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192);
+            scr_text(textMessage,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
     
             talking = 1;
             timer =60;
@@ -121,7 +110,7 @@ if(talking ==0 &amp;&amp; timer &lt;= 0){
     }
 }
 else { 
-    if(talking = 1 &amp;&amp; obj_game.canMove) talking = 0;
+    if(talking == 1 &amp;&amp; obj_game.canMove) talking = 0;
     
     if(input.A &amp;&amp; timer &lt;=0){ 
         obj_game.mission[missionI] = 1; // assigning the mission

@@ -2,15 +2,19 @@
 <room>
   <caption></caption>
   <width>1024</width>
-  <height>768</height>
+  <height>704</height>
   <vsnap>64</vsnap>
   <hsnap>64</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>with(obj_player){
+    phy_position_x = obj_game.pplayerx;
+    phy_position_y = obj_game.pplayery;
+    
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
