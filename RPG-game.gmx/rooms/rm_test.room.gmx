@@ -110,6 +110,10 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="transition_system" x="168" y="272" name="inst_EF86F646" locked="0" code="    room_dist = rm_home_1;&#xA;    x_dist = 224;&#xA;    y_dist = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_base" x="1312" y="352" name="inst_49D4A8D4" locked="0" code="hp = 10;&#xA;spd = 1;&#xA;state = &quot;idle&quot;;&#xA;damage = 2;&#xA;facing = 3;&#xA;range = 64;&#xA;xst = 1312;&#xA;yst = 352;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_base" x="1312" y="448" name="inst_590F38CC" locked="0" code="hp = 10;&#xA;spd = 1;&#xA;state = &quot;idle&quot;;&#xA;damage = 2;&#xA;facing = 3;&#xA;range = 64;&#xA;xst = 1312;&#xA;yst = 448;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="-25" y="128" name="inst_F329A053" locked="0" code="" scaleX="0.5" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="0" y="701" name="inst_B8443EF9" locked="0" code="" scaleX="11" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="96" y="-23" name="inst_F536A643" locked="0" code="" scaleX="6" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="1977" y="316" name="inst_7AF09077" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

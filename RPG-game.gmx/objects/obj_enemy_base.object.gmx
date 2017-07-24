@@ -57,33 +57,47 @@ xst = 0; // the y-axis where the monster starts
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>image_speed =0.1;
 if ( instance_exists( obj_player)){
     if(distance_to_object(obj_player) &lt;= range){
     
         phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
          phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
+          // ----- sprite control -- *diagonal need modification
+         if(phy_position_x - phy_position_xprevious &gt;0 &amp;&amp; abs(phy_position_x - phy_position_xprevious)&gt;abs(phy_position_y - phy_position_yprevious)){       
+            sprite_index = spr_Monster_right;
+         }else if(phy_position_x - phy_position_xprevious &lt;0 &amp;&amp; abs(phy_position_x - phy_position_xprevious)&gt;abs(phy_position_y - phy_position_yprevious)){  
+                 sprite_index = spr_Monster_left;
+         } else if(phy_position_y - phy_position_yprevious &gt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious)){  
+                 sprite_index = spr_Monster_down;
+         } else if(phy_position_y - phy_position_yprevious &lt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious)){  
+                 sprite_index = spr_Monster_up;
+         } 
     }
     else {
          switch(facing ){ 
             case 0 :{
                 cx = 0;
                 cy = -spd;
+                sprite_index = spr_Monster_up;
                 break;
             }
             case 1 :{
                 cx = spd;
                 cy = 0;
+                sprite_index = spr_Monster_right;
                 break;
             }
             case 2 :{
                 cx = 0;
                 cy = spd;
+                sprite_index = spr_Monster_down;
                 break;
             }
             case 3 :{
                 cx = -spd;
                 cy = 0;
+                sprite_index = spr_Monster_left;
                 break;
             }
          }
