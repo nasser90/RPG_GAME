@@ -31,7 +31,9 @@ spd = 4; // the speed the char moves at
 jmpspd =3; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
-hp = 10; // health points
+
+hp = 100; // health points
+lv = 0; // level
 onQuest=0;
 
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
@@ -68,7 +70,6 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         break;
     }
     case "up":{
-        
         image_speed = 0.2;
         sprite_index= spr_player_up;
         checkmoveinput();
@@ -87,7 +88,6 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         break;
     }
     case "down":{
-        
         sprite_index= spr_player_down;
         image_speed = 0.2;
         checkmoveinput();
@@ -105,9 +105,7 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         cy =0;
         break;
     }
-    
 }
-              
 
 // moving obj
 
