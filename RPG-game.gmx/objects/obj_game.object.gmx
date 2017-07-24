@@ -35,15 +35,9 @@ canMove = true;
 pplayerx =40;
 pplayery = 350;
 
-for(var i =0;i&lt;100;i++){
+for(i =0;i&lt;10;i++){
     mission[i] =0; // 0 not taken , 1 taken , 2 done 
 }
-
-for(var i=0;i&lt;10;i++){
-    inventory[i] =0;// 0 nothing , 1 sword?!? , 
-}
-
-
 </string>
           </argument>
         </arguments>
