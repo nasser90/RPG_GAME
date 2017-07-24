@@ -25,6 +25,7 @@
     <sprite>sprites\spr_btn</sprite>
     <sprite>sprites\spr_quest</sprite>
     <sprite>sprites\spr_on_quest</sprite>
+    <sprite>sprites\spr_map</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

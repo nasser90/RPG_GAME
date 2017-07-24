@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,10 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_healthbar(view_xview[0]+10, view_yview[0]+10, view_xview[0]+200, view_yview[0]+30,obj_player.hp, c_white, c_red, c_green, 0, true, true);
-draw_set_colour(c_white);
-draw_text(view_xview[0]+10, view_yview[0]+30, "hp: " + string(obj_player.hp));
-draw_text(view_xview[0]+10, view_yview[0]+55, "Level: " + string(obj_player.lv));
+            <string>/// Drawing info of player on the screen.
+
+draw_healthbar(view_xview[0]+10, view_yview[0]+10, view_xview[0]+200, view_yview[0]+30,obj_player.hp, c_white, c_red, c_green, 0, true, true); // drawing a healthbar.
+draw_set_colour(c_white); // set color to text.
+draw_text(view_xview[0]+10, view_yview[0]+30, "hp: " + string(obj_player.hp)); // drawing hp in text.
+draw_text(view_xview[0]+10, view_yview[0]+55, "Level: " + string(obj_player.lv)); // drawing level.
+draw_rectangle_colour(view_xview[0]+9, view_yview[0]+566.5, view_xview[0]+367, view_yview[0]+694,c_black,c_black,c_black,c_black,false);
+draw_sprite(spr_map, 0,view_xview[0]+10, view_yview[0]+567); // drawing small map.
 </string>
           </argument>
         </arguments>
