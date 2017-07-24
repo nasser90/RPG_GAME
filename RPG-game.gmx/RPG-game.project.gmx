@@ -73,6 +73,7 @@
       <object>objects\obj_btn_start</object>
       <object>objects\obj_btn_quit</object>
       <object>objects\obj_text</object>
+      <object>objects\show_info_player</object>
     </objects>
     <objects name="items">
       <object>objects\obj_menu</object>

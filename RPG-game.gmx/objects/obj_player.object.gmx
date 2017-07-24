@@ -30,7 +30,8 @@ state = "idle"; // Example attack,move,idle
 spd = 4; // the speed the char moves at
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
-hp = 10; // health points
+hp = 100; // health points
+lv = 0; // level
 onQuest=0;
 
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
