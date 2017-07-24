@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-
     <sprites name="player">
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_down</sprite>
@@ -36,7 +35,6 @@
     </sprites>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_map</sprite>
-
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -96,7 +94,6 @@
     <objects name="items">
       <object>objects\obj_menu</object>
       <object>objects\obj_item</object>
-
     </objects>
   </objects>
   <rooms name="rooms">
