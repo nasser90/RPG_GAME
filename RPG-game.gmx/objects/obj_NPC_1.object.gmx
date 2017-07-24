@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+xdist=0;
+ydist=0;
 InsCre =false; // instance created ?!? 
 </string>
           </argument>
@@ -53,11 +55,11 @@ InsCre =false; // instance created ?!?
 
 event_inherited();
 
-if(obj_game.mission[missionI] == 1 &amp;&amp; !InsCre){
+if(obj_game.mission[missionI] != 1 &amp;&amp; !InsCre){
     with(instance_create(330,270,transition_system)){
     room_dist = rm_home_2;
-    x_dist = 224;
-    y_dist = 352;
+    x_dist = other.xdist;
+    y_dist = other.ydist;
     }
     InsCre= true;
 }

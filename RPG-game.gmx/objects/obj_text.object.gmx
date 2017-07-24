@@ -30,7 +30,7 @@ print ="";
 time =0;
 depth = depth - instance_number(obj_text);
 obj_game.canMove = false;
-
+tick = 0;
 </string>
           </argument>
         </arguments>
@@ -58,6 +58,7 @@ obj_game.canMove = false;
 if(time &lt; text_length){
     time += spd;
     print = string_copy(text,0,time);
+    tick++;
 }
 </string>
           </argument>
@@ -119,32 +120,33 @@ draw_set_alpha(1);
           <argument>
             <kind>1</kind>
             <string>/// check for player input
-
-if(time &gt;= text_length &amp;&amp; input.B){
-    if(text_next[0] == ""){
-        obj_game.canMove = true;
-        talking = 0;
+if(input.B &amp;&amp; tick &gt;= 5){
+    if(time &gt;= text_length ){
+        if(text_next[0] == ""){
+            obj_game.canMove = true;
+            talking = 0;
+        }
+        else{
+            scr_text(
+            text_next[0],
+            spd,
+            x,
+            y,
+            maxlength,
+            font,
+            text_num,
+            text_next[1],
+            text_next[2],
+            text_next[3],
+            text_next[4],
+            text_next[5],
+            text_next[6],
+            text_next[7],
+            text_next[8]
+            );
+        }
+        instance_destroy();
     }
-    else{
-        scr_text(
-        text_next[0],
-        spd,
-        x,
-        y,
-        maxlength,
-        font,
-        text_num+1,
-        text_next[1],
-        text_next[2],
-        text_next[3],
-        text_next[4],
-        text_next[5],
-        text_next[6],
-        text_next[7],
-        text_next[8]
-        );
-    }
-    instance_destroy();
 }
 
 
