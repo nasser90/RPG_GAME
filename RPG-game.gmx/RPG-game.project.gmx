@@ -31,11 +31,11 @@
       <script>scripts\state_int.gml</script>
       <script>scripts\state_switch.gml</script>
       <script>scripts\state_process.gml</script>
-    </scripts>
-    <scripts name="states">
-      <script>scripts\st_title.gml</script>
-      <script>scripts\st_Menu.gml</script>
-      <script>scripts\st_ingame.gml</script>
+      <scripts name="states">
+        <script>scripts\st_title.gml</script>
+        <script>scripts\st_Menu.gml</script>
+        <script>scripts\st_ingame.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
