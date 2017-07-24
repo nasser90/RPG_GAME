@@ -94,9 +94,13 @@ if(!jobdone){ // drawing the arrow
     if (obj_game.mission[missionI] == 0){
         draw_set_colour(c_red);
         draw_set_font(fnt_default);
-        draw_arrow(x,y-96 ,x,y-32 ,32);
+        //draw_arrow(x,y-96 ,x,y-32 ,32); //instead of arrow we draw spr_quest
+        draw_sprite(spr_quest,0,x,y-65);
+    } else if (obj_game.mission[missionI] == 1) {
+        draw_sprite(spr_on_quest,0,x,y-65);
     }
 }
+
 if(talking ==0 &amp;&amp; timer &lt;= 0){
     if(instance_exists(obj_player)){
         if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
