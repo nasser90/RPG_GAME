@@ -34,13 +34,7 @@ damage = 2;
 facing = 3; // the direction the obj move at 
 range = 64; 
 xst = 0; // the x-axis where the monster starts
-<<<<<<< HEAD
-xst = 0; // the y-axis where the monster starts
-timer = 0;
-
-=======
 yst = 0; // the y-axis where the monster starts
->>>>>>> 61d071a049ef0c55fb6726246d40ef381a6be09a
 </string>
           </argument>
         </arguments>

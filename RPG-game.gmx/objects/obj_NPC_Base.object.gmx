@@ -99,13 +99,9 @@ if(talking ==0 &amp;&amp; timer &lt;= 0){
                     yscale = 10;
             }
             */
-<<<<<<< HEAD
             if(obj_game.mission[missionI] !=2) //draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
             scr_text(textMessageJob,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
-=======
-            if(!jobdone) //draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
-            scr_text(textMessageJob,0.2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
->>>>>>> 61d071a049ef0c55fb6726246d40ef381a6be09a
+
             else //draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
             scr_text(textMessage,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
     
