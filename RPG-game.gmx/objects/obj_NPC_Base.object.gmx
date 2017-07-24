@@ -100,31 +100,35 @@ if(!jobdone){ // drawing the arrow
 if(talking ==0 &amp;&amp; timer &lt;= 0){
     if(instance_exists(obj_player)){
         if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
-            with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_massagebox)){ // drawing massege box
+            /*
+            with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_messagebox)){ // drawing messege box
                     xscale = 19;
                     yscale = 10;
             }
-             
+            */
+            if(!jobdone) //draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
+            scr_text(textMessageJob,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,"","","","","","","","","");
+            else //draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
+            scr_text(textMessage,2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192);
+    
             talking = 1;
             timer =60;
         }
     }
 }
 else { 
-    if(talking ==1) obj_game.canMove = false;
-    draw_set_colour(c_white);
-    if(!jobdone) draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
-    else draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
+    if(talking = 1 &amp;&amp; obj_game.canMove) talking = 0;
+    
     if(input.A &amp;&amp; timer &lt;=0){ 
         obj_game.mission[missionI] = 1; // assigning the mission
-        with(obj_massagebox) instance_destroy();
-        talking =0;
-        obj_game.canMove = true;
+        //with(obj_messagebox) instance_destroy();
+        //talking =0;
+        //obj_game.canMove = true;
         timer =10;
     }else if(input.B &amp;&amp; timer &lt;=0){
-        with(obj_massagebox) instance_destroy();
-        talking =0;
-        obj_game.canMove = true;
+        //with(obj_messagebox) instance_destroy();
+        //talking =0;
+        //obj_game.canMove = true;
         timer =10;
     }
     

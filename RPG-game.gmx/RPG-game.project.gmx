@@ -34,10 +34,12 @@
       <script>scripts\state_process.gml</script>
       <scripts name="states">
         <script>scripts\st_title.gml</script>
-        <script>scripts\st_Menu.gml</script>
+        <script>scripts\st_main_menu.gml</script>
         <script>scripts\st_ingame.gml</script>
+        <script>scripts\st_item_menu.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -55,7 +57,7 @@
     </objects>
     <objects name="game stuff">
       <object>objects\transition_system</object>
-      <object>objects\obj_massagebox</object>
+      <object>objects\obj_messagebox</object>
       <object>objects\collision_system</object>
       <object>objects\obj_game</object>
       <object>objects\input</object>
@@ -63,11 +65,12 @@
       <object>objects\obj_messageBox_nasser</object>
       <object>objects\obj_btn_start</object>
       <object>objects\obj_btn_quit</object>
+      <object>objects\obj_text</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_main_menu</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_villagefight</room>
     <room>rooms\rm_home_1</room>

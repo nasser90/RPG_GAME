@@ -8,12 +8,12 @@ if(input.A && state_time > 30){
 }
 
 if( Aclicked){
-    draw_set_alpha(draw_get_alpha() - 0.1);
+    draw_set_alpha(draw_get_alpha() - 0.01);
 }
 
 if(draw_get_alpha() ==0){
     draw_set_alpha(1);
-    room_goto(rm_menu);
-    state_switch(st_Menu);
+    room_goto(rm_main_menu);
+    state_switch(st_main_menu);
 }
 
