@@ -8,7 +8,7 @@ with (txt)
     for (var i = 7; i < 15;i++){
         text_next[j++] = "";
     }
-    for (var i = 7; i < argument_count;i++){
+    for (var i = 7; i < 15;i++){
         text_next[j++] = argument[i];
     }
     padding = 16;

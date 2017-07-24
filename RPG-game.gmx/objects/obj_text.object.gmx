@@ -120,7 +120,7 @@ draw_set_alpha(1);
             <kind>1</kind>
             <string>/// check for player input
 
-if(time == text_length &amp;&amp; input.B){
+if(time &gt;= text_length &amp;&amp; input.B){
     if(text_next[0] == ""){
         obj_game.canMove = true;
         talking = 0;
