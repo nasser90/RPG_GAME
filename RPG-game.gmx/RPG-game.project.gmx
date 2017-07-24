@@ -29,6 +29,7 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\bck_water</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -74,7 +75,6 @@
       <object>objects\obj_text</object>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <room>rooms\rm_main_menu</room>

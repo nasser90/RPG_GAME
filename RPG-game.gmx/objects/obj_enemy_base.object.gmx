@@ -79,8 +79,10 @@ if ( instance_exists( obj_player)){
                  sprite_index = spr_Monster_down;
          } else if(phy_position_y - phy_position_yprevious &lt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious)){  
                  sprite_index = spr_Monster_up;
+
     }
     }
+
     else {
          switch(facing ){ 
             case 0 :{

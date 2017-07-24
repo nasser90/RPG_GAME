@@ -95,8 +95,11 @@
           <argument>
             <kind>1</kind>
             <string>room_goto(rm_test);
-with(obj_game)
+
+with(obj_game){
+
 state_switch(st_ingame);
+}
 </string>
           </argument>
         </arguments>
