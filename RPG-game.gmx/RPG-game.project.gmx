@@ -6,25 +6,33 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_collision_system</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_player_down</sprite>
-    <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_right</sprite>
-    <sprite>sprites\spr_player_up</sprite>
-    <sprite>sprites\spr_NPC</sprite>
-    <sprite>sprites\spr_Monster</sprite>
-    <sprite>sprites\spr_Monster_down</sprite>
-    <sprite>sprites\spr_Monster_up</sprite>
-    <sprite>sprites\spr_Monster_left</sprite>
-    <sprite>sprites\spr_Monster_right</sprite>
-    <sprite>sprites\spr_messagebox</sprite>
-    <sprite>sprites\spr_trans</sprite>
-    <sprite>sprites\spr_title</sprite>
-    <sprite>sprites\spr_water</sprite>
-    <sprite>sprites\spr_btn</sprite>
-    <sprite>sprites\spr_quest</sprite>
-    <sprite>sprites\spr_on_quest</sprite>
+    <sprites name="player">
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_player_down</sprite>
+      <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_player_up</sprite>
+      <sprite>sprites\spr_player_left</sprite>
+    </sprites>
+    <sprites name="NPC">
+      <sprite>sprites\spr_quest</sprite>
+      <sprite>sprites\spr_on_quest</sprite>
+      <sprite>sprites\spr_NPC</sprite>
+    </sprites>
+    <sprites name="enemy">
+      <sprite>sprites\spr_Monster</sprite>
+      <sprite>sprites\spr_Monster_down</sprite>
+      <sprite>sprites\spr_Monster_up</sprite>
+      <sprite>sprites\spr_Monster_left</sprite>
+      <sprite>sprites\spr_Monster_right</sprite>
+    </sprites>
+    <sprites name="game stuff">
+      <sprite>sprites\spr_btn</sprite>
+      <sprite>sprites\spr_title</sprite>
+      <sprite>sprites\spr_water</sprite>
+      <sprite>sprites\spr_messagebox</sprite>
+      <sprite>sprites\spr_collision_system</sprite>
+      <sprite>sprites\spr_trans</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -47,6 +55,7 @@
       </scripts>
     </scripts>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\draw_rectangle_grided.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -55,6 +64,7 @@
     <objects name="NPC">
       <object>objects\obj_NPC_Base</object>
       <object>objects\obj_NPC_1</object>
+      <object>objects\obj_quest</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -77,6 +87,7 @@
     </objects>
     <objects name="items">
       <object>objects\obj_menu</object>
+      <object>objects\obj_item</object>
     </objects>
   </objects>
   <rooms name="rooms">

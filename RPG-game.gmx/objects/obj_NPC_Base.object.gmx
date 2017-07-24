@@ -35,6 +35,7 @@ intract = 0; // check if intraction started or not
 timer =0;
 talking = false ; // 
 missionI = 0; // the mission index that this NPC have
+questCre = false; // if ! is created or not
 </string>
           </argument>
         </arguments>
@@ -86,9 +87,14 @@ if(!jobdone){ // drawing the arrow
         draw_set_colour(c_red);
         draw_set_font(fnt_default);
         //draw_arrow(x,y-96 ,x,y-32 ,32); //instead of arrow we draw spr_quest
-        draw_sprite(spr_quest,0,x,y-65);
+        //draw_sprite(spr_quest,0,x,y-65);
+        if(!questCre){
+            with(instance_create(x,y-65,obj_quest)){
+                missionI = other.missionI;
+            }
+        }
     } else if (obj_game.mission[missionI] == 1) {
-        draw_sprite(spr_on_quest,0,x,y-65);
+        //draw_sprite(spr_on_quest,0,x,y-65);
     }
 }
 

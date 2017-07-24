@@ -25,17 +25,52 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/// drawing the "main" menu
+
 padding = 32;
 
+_x = view_xview[0];
+_y = view_yview[0];
+ex = view_wview[0];
+ey = view_hview[0];
+
 draw_set_colour(c_gray);
-draw_rectangle(view_xview[0]+padding,view_yview[0]+padding,view_wview[0]-padding,view_hview[0]-padding,0);
+draw_rectangle(_x+padding,_y+padding, _x +ex -padding,_y + ey-padding,0);
 draw_set_colour(c_black);
-draw_rectangle(view_xview[0]+padding,view_yview[0]+padding,view_wview[0]-padding,view_hview[0]-padding,1);
+draw_rectangle(_x+padding,_y+padding,_x + ex-padding,_y + ey-padding,1);
 
-draw_line(view_wview[0]/2,view_yview[0]+padding ,view_wview[0]/2,view_hview[0]-padding);
+draw_line(_x + ex / 2, _y + padding ,_x + ex / 2 ,_y + ey - padding);
+/*
+draw_set_colour(make_colour_rgb(150,150,150));
+draw_rectangle(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),0);
+*/
+draw_rectangle_grided(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),5,make_colour_rgb(150,150,150),c_black,c_white);
 
-draw_rectangle((view_wview[0]/2)+ padding,view_yview[0]+(padding*2),(view_wview[0])-(padding*2), view_hview[0]-(padding*2),0);
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// drawing the items
+
 </string>
           </argument>
         </arguments>
