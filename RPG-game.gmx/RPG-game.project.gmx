@@ -74,6 +74,7 @@
       <object>objects\obj_text</object>
     </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <room>rooms\rm_main_menu</room>
