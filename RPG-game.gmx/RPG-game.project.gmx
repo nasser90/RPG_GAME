@@ -33,11 +33,14 @@
       <sprite>sprites\spr_collision_system</sprite>
       <sprite>sprites\spr_trans</sprite>
     </sprites>
+    <sprite>sprites\spr_gameover</sprite>
+    <sprite>sprites\spr_map</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\bck_water</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -52,6 +55,8 @@
         <script>scripts\st_main_menu.gml</script>
         <script>scripts\st_ingame.gml</script>
         <script>scripts\st_item_menu.gml</script>
+        <script>scripts\st_fight.gml</script>
+        <script>scripts\st_gameover.gml</script>
       </scripts>
     </scripts>
     <script>scripts\scr_text.gml</script>
@@ -83,6 +88,7 @@
       <object>objects\obj_btn_start</object>
       <object>objects\obj_btn_quit</object>
       <object>objects\obj_text</object>
+      <object>objects\obj_gameover</object>
       <object>objects\show_info_player</object>
     </objects>
     <objects name="items">
@@ -97,6 +103,7 @@
     <room>rooms\rm_villagefight</room>
     <room>rooms\rm_home_1</room>
     <room>rooms\rm_home_2</room>
+    <room>rooms\rm_gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
