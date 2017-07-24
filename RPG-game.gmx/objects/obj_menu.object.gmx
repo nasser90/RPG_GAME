@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>/// drawing the "main" menu
 
+num_of_grid=10;// how many tiles in each (x-y)-axis
+
 padding = 32;
 
 _x = view_xview[0];
@@ -44,7 +46,7 @@ draw_line(_x + ex / 2, _y + padding ,_x + ex / 2 ,_y + ey - padding);
 draw_set_colour(make_colour_rgb(150,150,150));
 draw_rectangle(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),0);
 */
-draw_rectangle_grided(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),5,make_colour_rgb(150,150,150),c_black,c_white);
+draw_rectangle_grided(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),num_of_grid,make_colour_rgb(150,150,150),c_black,c_white);
 
 
 
@@ -71,6 +73,22 @@ draw_rectangle_grided(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), 
             <kind>1</kind>
             <string>/// drawing the items
 
+//       xstart      ,     ystart    ,        xend        ,       yend
+//_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2)
+
+var _xstart = _x +(ex/2)+ padding;
+var _ystart = _y+(padding*2);
+var _xend = _x +(ex)-(padding*2);
+var _yend = _y + ey-(padding*2);
+
+var x_grid_size = abs(_xstart - _xend)/num_of_grid;
+var y_grid_size = abs(_ystart - _yend)/num_of_grid;
+
+for(var i=0;i&lt; num_of_grid;i++){
+    for(var j=0;j&lt;num_of_grid;j++){
+        
+    }
+}
 </string>
           </argument>
         </arguments>
