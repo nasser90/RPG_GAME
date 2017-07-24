@@ -74,6 +74,9 @@
       <object>objects\obj_btn_quit</object>
       <object>objects\obj_text</object>
     </objects>
+    <objects name="items">
+      <object>objects\obj_menu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
