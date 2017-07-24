@@ -110,6 +110,7 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="collision_system" x="1977" y="316" name="inst_7AF09077" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="320" y="0" name="inst_697E00EF" locked="0" code="" scaleX="0.375" scaleY="1.625" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="320" y="104" name="inst_84D64612" locked="0" code="" scaleX="0.875" scaleY="0.375" colour="4294967295" rotation="0"/>
+    <instance objName="show_info_player" x="48" y="168" name="inst_D9EC7954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
