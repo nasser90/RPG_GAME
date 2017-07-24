@@ -1,15 +1,21 @@
 if(state_time==0){
+    with(instance_create(0,0,obj_menu))depth = -10;;
+    selected =0;
     canMove = false;
-    with(instance_create(view_xview[0],view_yview[0],obj_massagebox)){
-        xscale = 15;
-        yscale = 15;
-    }
+    timer=0;
 }
 
 if(input.B && state_time >10){
     canMove = true;
-     with(obj_massagebox){
-        instance_destroy();
-    }
+    with(obj_menu) instance_destroy();
     state_switch(st_ingame);
 }
+if(input.up && timer >=5){
+    //if(selected == 1);
+}
+
+
+
+
+
+timer--;
