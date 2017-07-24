@@ -37,6 +37,8 @@ left = false;
 A = false; // continue , intract , jump  etc
 B = false; // back , attack  etc 
 
+start = false;
+select = false;
 
 </string>
           </argument>
@@ -69,7 +71,8 @@ left = (keyboard_check(ord('A')) || keyboard_check(vk_left));
 A = (keyboard_check(ord('J')) || keyboard_check(vk_space));
 B = keyboard_check(ord('K'));
 
-
+start = (keyboard_check(ord('U')) || keyboard_check(vk_escape));
+select = (keyboard_check(ord('I')) || keyboard_check(vk_enter));
 </string>
           </argument>
         </arguments>

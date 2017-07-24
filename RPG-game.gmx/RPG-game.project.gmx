@@ -25,10 +25,13 @@
     <sprite>sprites\spr_btn</sprite>
     <sprite>sprites\spr_quest</sprite>
     <sprite>sprites\spr_on_quest</sprite>
+    <sprite>sprites\spr_gameover</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\bck_water</background>
+    <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -38,12 +41,16 @@
       <script>scripts\state_int.gml</script>
       <script>scripts\state_switch.gml</script>
       <script>scripts\state_process.gml</script>
+      <scripts name="states">
+        <script>scripts\st_title.gml</script>
+        <script>scripts\st_main_menu.gml</script>
+        <script>scripts\st_ingame.gml</script>
+        <script>scripts\st_item_menu.gml</script>
+        <script>scripts\st_fight.gml</script>
+        <script>scripts\st_gameover.gml</script>
+      </scripts>
     </scripts>
-    <scripts name="states">
-      <script>scripts\st_title.gml</script>
-      <script>scripts\st_Menu.gml</script>
-      <script>scripts\st_ingame.gml</script>
-    </scripts>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -61,7 +68,7 @@
     </objects>
     <objects name="game stuff">
       <object>objects\transition_system</object>
-      <object>objects\obj_massagebox</object>
+      <object>objects\obj_messagebox</object>
       <object>objects\collision_system</object>
       <object>objects\obj_game</object>
       <object>objects\input</object>
@@ -69,15 +76,18 @@
       <object>objects\obj_messageBox_nasser</object>
       <object>objects\obj_btn_start</object>
       <object>objects\obj_btn_quit</object>
+      <object>objects\obj_text</object>
+      <object>objects\obj_gameover</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_main_menu</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_villagefight</room>
     <room>rooms\rm_home_1</room>
     <room>rooms\rm_home_2</room>
+    <room>rooms\rm_gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

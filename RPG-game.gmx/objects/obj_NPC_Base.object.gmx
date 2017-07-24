@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>/// Var
-textMessage = "TEXT HERE"; // text message when he talking to the player
-textMessageJob = "TEXT HERE"; // text message for asking the player to do somting.
+for(var i=0;i&lt;10;i++){
+textMessage[i] = ""; // text message when he talking to the player
+textMessageJob[i] = ""; // text message for asking the player to do somting.
+}
 jobdone = false; // Is he did the job or not .
 intract = 0; // check if intraction started or not 
 timer =0;
@@ -55,18 +57,7 @@ missionI = 0; // the mission index that this NPC have
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(instance_exists(obj_player)){
-    if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
-        if(!jobdone){
-            show_message(textMessageJob);
-            intract = 1;        
-        }
-        else
-            show_message(textMessage);
-            intract = 1;
-    }
-}*/
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -100,34 +91,40 @@ if(!jobdone){ // drawing the arrow
         draw_sprite(spr_on_quest,0,x,y-65);
     }
 }
+
 if(talking ==0 &amp;&amp; timer &lt;= 0){
     if(instance_exists(obj_player)){
         if (input.A &amp;&amp; distance_to_object(obj_player) &lt; 32){
-            with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_massagebox)){ // drawing massege box
+            /*
+            with(instance_create(view_xview[0]+ 600,view_yview[0]+350,obj_messagebox)){ // drawing messege box
                     xscale = 19;
                     yscale = 10;
             }
-             
+            */
+            if(obj_game.mission[missionI] !=2) //draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
+            scr_text(textMessageJob[0],2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,textMessageJob[1],textMessageJob[2],textMessageJob[3],textMessageJob[4],textMessageJob[5],textMessageJob[6],textMessageJob[7],textMessageJob[8],textMessageJob[9]);
+
+            else //draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
+            scr_text(textMessage[0],0.2,view_xview[0] + 100,view_yview[0]+366,view_wview[0]-192,fnt_default,0,textMessage[1],textMessage[2],textMessage[3],textMessage[4],textMessage[5],textMessage[6],textMessage[7],textMessage[8],textMessage[9]);
+    
             talking = 1;
             timer =60;
         }
     }
 }
 else { 
-    if(talking ==1) obj_game.canMove = false;
-    draw_set_colour(c_white);
-    if(!jobdone) draw_text(view_xview[0]+100,view_yview[0]+366,textMessageJob);
-    else draw_text(view_xview[0]+100,view_yview[0]+366,textMessage);
-    if(input.A &amp;&amp; timer &lt;=0){ 
+    if(talking = 1 &amp;&amp; obj_game.canMove) talking = 0;
+    
+    if(input.A &amp;&amp; timer &lt;=0 &amp;&amp; obj_game.mission[missionI] = 0){ 
         obj_game.mission[missionI] = 1; // assigning the mission
-        with(obj_massagebox) instance_destroy();
-        talking =0;
-        obj_game.canMove = true;
+        //with(obj_messagebox) instance_destroy();
+        //talking =0;
+        //obj_game.canMove = true;
         timer =10;
     }else if(input.B &amp;&amp; timer &lt;=0){
-        with(obj_massagebox) instance_destroy();
-        talking =0;
-        obj_game.canMove = true;
+        //with(obj_messagebox) instance_destroy();
+        //talking =0;
+        //obj_game.canMove = true;
         timer =10;
     }
     
