@@ -61,28 +61,30 @@ timer =0;
             <string>image_speed =0.1;
 if ( instance_exists( obj_player)){
     if(distance_to_object(obj_player) &lt;= range){
-        if(timer&lt;-10){
-            timer = 10;
-        } else if(abs(obj_player.phy_position_x-phy_position_x)&gt;=abs(obj_player.phy_position_y-phy_position_y)&amp;&amp; timer&gt;0){
-            timer--;
+        if(obj_game.state != st_fight){
+            if(abs(obj_player.phy_position_x-phy_position_x)&gt;=abs(obj_player.phy_position_y-phy_position_y)){
+                phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
+            }else{
+                phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
+            }
+        }else{
             phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
-        } else {
-             timer--;
-             phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
+         //   phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
         }
+   
+        
           // ----- sprite control -- *diagonal need modification
          if(phy_position_x - phy_position_xprevious &gt;0 &amp;&amp; abs(phy_position_x - phy_position_xprevious)&gt;abs(phy_position_y - phy_position_yprevious)){       
             sprite_index = spr_Monster_right;
          }else if(phy_position_x - phy_position_xprevious &lt;0 &amp;&amp; abs(phy_position_x - phy_position_xprevious)&gt;abs(phy_position_y - phy_position_yprevious)){  
                  sprite_index = spr_Monster_left;
-         } else if(phy_position_y - phy_position_yprevious &gt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious)){  
+         } else if(phy_position_y - phy_position_yprevious &gt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious) &amp;&amp;obj_game.state!=st_fight){  
                  sprite_index = spr_Monster_down;
-         } else if(phy_position_y - phy_position_yprevious &lt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious)){  
+         } else if(phy_position_y - phy_position_yprevious &lt;0 &amp;&amp; abs(phy_position_y - phy_position_yprevious)&gt;abs(phy_position_x - phy_position_xprevious)&amp;&amp;obj_game.state!=st_fight){  
                  sprite_index = spr_Monster_up;
 
-    }
-    }
-
+    }   
+}
     else {
          switch(facing ){ 
             case 0 :{
@@ -158,12 +160,21 @@ if ( instance_exists( obj_player)){
             <kind>1</kind>
             <string>with(other){
     if(iframes &lt;= 0){
-        with(instance_create(phy_position_x,phy_position_y,transition_system)){
-            room_dist = rm_villagefight;
-            
-            x_dist = 80;
-            y_dist =300;
-        }        
+        if(obj_game.state != st_fight){
+            with(instance_create(phy_position_x,phy_position_y,transition_system)){
+                room_dist = rm_villagefight;
+                
+                x_dist = 80;
+                y_dist =300;
+                
+                with(obj_game){
+                    state_switch(st_fight);
+                }
+            } 
+        }else {
+            obj_player.hp=-0.1;
+        
+        }       
     }
 }
 </string>
@@ -179,7 +190,7 @@ if ( instance_exists( obj_player)){
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
-  <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
+  <PhysicsObjectAngularDamping>0</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>

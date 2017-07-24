@@ -57,9 +57,8 @@
   <instances>
     <instance objName="collision_system" x="-54" y="597" name="inst_E343B835" locked="0" code="" scaleX="17" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="-62" y="384" name="inst_2DF912DF" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="collision_system" x="1017" y="441" name="inst_47E2CF15" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="transition_system" x="960" y="512" name="inst_65A2B245" locked="0" code="physics_apply_force(x,y,0,20);&#xA;" scaleX="1.22580647468567" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_NPC_Base" x="-384" y="-128" name="inst_B9B1D15C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="collision_system" x="1017" y="377" name="inst_47E2CF15" locked="0" code="" scaleX="1.12698411941528" scaleY="3.890625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_base" x="768" y="564" name="inst_27C03219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

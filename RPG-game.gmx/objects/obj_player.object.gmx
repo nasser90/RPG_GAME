@@ -28,9 +28,10 @@
             <string>/// creating variables
 state = "idle"; // Example attack,move,idle
 spd = 4; // the speed the char moves at
+jmpspd =3; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
-hp = 10; // health points
+hp = 100; // health points
 onQuest=0;
 
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
@@ -67,9 +68,12 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         break;
     }
     case "up":{
+        
         image_speed = 0.2;
         sprite_index= spr_player_up;
         checkmoveinput();
+        if(obj_game.state = st_fight)
+            break;
         cy = -spd;
         cx =0;
         break;
@@ -83,9 +87,12 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         break;
     }
     case "down":{
+        
         sprite_index= spr_player_down;
         image_speed = 0.2;
         checkmoveinput();
+        if(obj_game.state = st_fight)
+            break;
         cy = spd;
         cx =0;
         break;
@@ -98,7 +105,9 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         cy =0;
         break;
     }
+    
 }
+              
 
 // moving obj
 
