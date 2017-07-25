@@ -29,12 +29,6 @@ with (txt)
     boxwidth = text_width + (padding*2);
     boxheight = text_height + (padding*2);
     
-    show_debug_message(text_num);
-    show_debug_message(text);
-    show_debug_message("========");
-    show_debug_message(text_next[0]);
-    show_debug_message("--------");
-    
 }
 
 

@@ -1,3 +1,4 @@
+///scr_movetoward(start,end,speed)
 
 var _start,_end,_spd;
 _start= argument[0]; // currint location

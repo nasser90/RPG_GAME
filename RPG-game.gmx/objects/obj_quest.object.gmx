@@ -50,17 +50,22 @@ image_speed = 0.2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_game.mission[missionI]==0){
-    if(!changed)
-    object_set_sprite(0,spr_on_quest)
+            <string>
+if(obj_game.mission[missionI]!=0){
+    if(!changed){
+        sprite_index = spr_on_quest;
+        changed=true;
+    }
 }
 else{
-    if(changed)
-    object_set_sprite(0,spr_quest)
-    
+    if(obj_game.mission[missionI]== 0 &amp;&amp; changed){
+        sprite_index = spr_quest;
+        changed = false;
+    }
 }
 if(obj_game.mission[missionI]==3)
     instance_destroy();
+
 </string>
           </argument>
         </arguments>

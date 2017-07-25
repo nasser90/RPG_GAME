@@ -40,7 +40,7 @@ for(i =0;i&lt;10;i++){
 }
 
 
-inventoryM = 10 ; // Maximum number of item the obj can carry
+inventoryM = 3 ; // Maximum number of item the obj can carry
 for(var i=0;i&lt;inventoryM;i++){
     inventory[i] =0;// 0 nothing , 1 sword?!? , 
 }

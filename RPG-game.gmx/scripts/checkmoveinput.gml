@@ -1,3 +1,5 @@
+///checkmoveinpt();
+
 with(other){
     if(obj_game.canMove){
         if(input.up){
