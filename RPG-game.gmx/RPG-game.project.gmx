@@ -38,6 +38,8 @@
     <sprites name="item">
       <sprite>sprites\spr_item_1</sprite>
       <sprite>sprites\spr_item_2</sprite>
+      <sprite>sprites\spr_item__1</sprite>
+      <sprite>sprites\spr_inventory_expand</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -97,6 +99,7 @@
     <objects name="items">
       <object>objects\obj_menu</object>
       <object>objects\obj_item</object>
+      <object>objects\obj_inventory_expand</object>
       <object>objects\obj_item_menu</object>
     </objects>
   </objects>

@@ -28,7 +28,7 @@
             <string>depth = -2000;
 item_cre = false;
 
-num_of_grid=3;// how many tiles in each (x-y)-axis
+num_of_grid=ceil(sqrt(obj_game.inventoryM));// how many tiles in each (x-y)-axis
 
 padding = 32;
 
@@ -113,13 +113,13 @@ var y_grid_size = abs(_ystart - _yend)/num_of_grid;
 
 for(var i=0;i &lt; num_of_grid;i++){
     for(var j=0;j &lt; num_of_grid;j++){
-        draw_text( _xstart+(j*x_grid_size)+6,_ystart+(i*y_grid_size)+6,(i*num_of_grid)+j);
+        draw_text( _xstart+(j*x_grid_size)+6,_ystart+(i*y_grid_size)+6,(i*num_of_grid)+j+1);
         if(!item_cre){
             with(instance_create(_xstart+(j*x_grid_size)+(x_grid_size/2),_ystart+(i*y_grid_size)+(y_grid_size/2),obj_item_menu)){
                 if((i*other.num_of_grid)+j &lt; obj_game.inventoryM){
                     itemI = obj_game.inventory[(i*other.num_of_grid)+j];
                 }else {
-                    itemI =0;
+                    itemI =-1;
                 }
             }
         }
