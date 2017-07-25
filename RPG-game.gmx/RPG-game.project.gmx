@@ -67,6 +67,7 @@
     </scripts>
     <script>scripts\scr_text.gml</script>
     <script>scripts\draw_rectangle_grided.gml</script>
+    <script>scripts\align_to_grid.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>

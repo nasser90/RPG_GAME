@@ -60,58 +60,102 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(state){
-    case "idle":{
-        image_speed = 0;
-       // sprite_index= spr_player;
-        checkmoveinput();
-        cx =0;
-        cy =0;
-        break;
-    }
-    case "up":{
-        image_speed = 0.2;
-        sprite_index= spr_player_up;
-        checkmoveinput();
-        if(obj_game.state = st_fight)
+            <string>/// Execute a p of c a pc .. master race mwahahahaha. looks like i am bored i dont have anything to work on i am not going to type my name here sorry looks you are too are bored to read this message till here soooooooooooo here we go we are now 2 not 1 horrrrray .why are you still reading this go do something draw some tiles,sprites,object,scrips,backgrounds, you can do anything and you are still here reading this useless message .If you are going to stay here then you can go and read the message again i cant be here for much longer ,goodbye i have to go D:
+
+if(obj_game.state== st_ingame){   
+    switch(state){
+        case "idle":{
+            image_speed = 0;
+           // sprite_index= spr_player;
+            checkmoveinput();
+            cx =0;
+            cy =0;
             break;
-        cy = -spd;
-        cx =0;
-        break;
-    }
-    case "right":{
-        sprite_index= spr_player_right;
-        image_speed = 0.2;
-        checkmoveinput();
-        cx = spd
-        cy =0;
-        break;
-    }
-    case "down":{
-        sprite_index= spr_player_down;
-        image_speed = 0.2;
-        checkmoveinput();
-        if(obj_game.state = st_fight)
+        }
+        case "up":{
+            checkmoveinput();
+            if(obj_game.state = st_fight)
+                break;
+            image_speed = 0.2;
+            sprite_index= spr_player_up;
+            cy = -spd;
+            cx = align_to_grid(x,16);
             break;
-        cy = spd;
-        cx =0;
-        break;
+        }
+        case "right":{
+            sprite_index= spr_player_right;
+            image_speed = 0.2;
+            checkmoveinput();
+            cx = spd
+            cy = align_to_grid(y,16);
+            break;
+        }
+        case "down":{
+            checkmoveinput();
+            if(obj_game.state = st_fight)
+            break;
+            sprite_index= spr_player_down;
+            image_speed = 0.2;
+            cy = spd;
+            cx = align_to_grid(x,16);
+            break;
+        }
+        case "left":{
+            sprite_index= spr_player_left;
+            image_speed = 0.2;
+            checkmoveinput();
+            cx = -spd;
+            cy = align_to_grid(y,16);
+            break;
+        }
     }
-    case "left":{
-        sprite_index= spr_player_left;
-        image_speed = 0.2;
-        checkmoveinput();
-        cx = -spd;
-        cy =0;
-        break;
-    }
+    
+    // moving obj
+    
+    phy_position_x += cx;
+    phy_position_y += cy;
 }
-
-// moving obj
-
-phy_position_x += cx;
-phy_position_y += cy;
-
+else{
+    switch(state){
+        case "idle":{
+            image_speed = 0;
+           // sprite_index= spr_player;
+            checkmoveinput();
+            cx =0;
+            cy =0;
+            break;
+        }
+        case "up":{
+            checkmoveinput();
+            break;
+        }
+        case "right":{
+            sprite_index= spr_player_right;
+            image_speed = 0.2;
+            checkmoveinput();
+            cx = spd
+            cy = 0;
+            break;
+        }
+        case "down":{
+            checkmoveinput();
+            break;
+        }
+        case "left":{
+            sprite_index= spr_player_left;
+            image_speed = 0.2;
+            checkmoveinput();
+            cx = -spd;
+            cy = 0;
+            break;
+        }
+    }
+    
+    // moving obj
+    
+    phy_position_x += cx;
+    phy_position_y += cy;
+}
 
 iframes--; 
 
