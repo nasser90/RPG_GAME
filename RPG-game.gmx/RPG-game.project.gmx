@@ -35,12 +35,17 @@
     </sprites>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_map</sprite>
+<<<<<<< Updated upstream
     <sprites name="item">
       <sprite>sprites\spr_item_1</sprite>
       <sprite>sprites\spr_item_2</sprite>
       <sprite>sprites\spr_item__1</sprite>
       <sprite>sprites\spr_inventory_expand</sprite>
     </sprites>
+=======
+    <sprite>sprites\spr_health</sprite>
+    <sprite>sprites\spr_level</sprite>
+>>>>>>> Stashed changes
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
