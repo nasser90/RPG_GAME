@@ -121,7 +121,7 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="obj_item" x="448" y="560" name="inst_9922767F" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="408" y="560" name="inst_2813CEA1" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="368" y="560" name="inst_2DEA0FA9" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="576" y="496" name="inst_C40685FE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory_expand" x="576" y="496" name="inst_C40685FE" locked="0" code="val = 90&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory_expand" x="608" y="496" name="inst_DFE97664" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory_expand" x="608" y="536" name="inst_F4560B70" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory_expand" x="608" y="576" name="inst_B2FFA986" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>

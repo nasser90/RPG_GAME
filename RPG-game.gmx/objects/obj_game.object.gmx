@@ -36,12 +36,13 @@ pplayerx =40;
 pplayery = 350;
 
 inventoryM = 9 ; // Maximum number of item the player can carry
+inventoryMM = 100; // maximum number of items the inventory can be
 
 for(i =0;i&lt;10;i++){
     mission[i] =0; // 0 not taken , 1 taken , 2 done 
 }
 
-for(var i=0;i&lt;inventoryM;i++){
+for(var i=0;i&lt;inventoryMM;i++){
     inventory[i] =0;// 0 nothing , 1 sword?!? , 
 }
 

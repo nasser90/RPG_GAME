@@ -30,6 +30,7 @@ image_xscale = 0.8;
 image_yscale = 0.8;
 depth = -1001;
 item_added = false;
+val = 1; // the number the inventory will be expanded by
 </string>
           </argument>
         </arguments>
@@ -79,8 +80,8 @@ t--;
             <string>/// Collision with the player
 
 with (obj_game){
-    if(!(other.item_added)){
-        obj_game.inventory[inventoryM++]=0;
+    if(!(other.item_added)){       
+        inventoryM = min(inventoryM+other.val,inventoryMM);
         other.item_added = true;
         with(other) instance_destroy();
     }else break;
