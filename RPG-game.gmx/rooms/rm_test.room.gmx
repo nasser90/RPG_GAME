@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1984</width>
   <height>704</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>64</vsnap>
+  <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -55,7 +55,7 @@ with (instance_create(256,384,obj_enemy_base)){
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1024" hview="704" xport="0" yport="0" wport="1024" hport="704" hborder="448" vborder="294" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1024" hview="704" xport="0" yport="0" wport="512" hport="512" hborder="448" vborder="294" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -113,7 +113,6 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="show_info_player" x="56" y="136" name="inst_3C1660A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="368" y="480" name="inst_620AF725" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="448" y="520" name="inst_C2555FC3" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="576" y="536" name="inst_A0F6EF3F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="488" y="520" name="inst_8C346DB4" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="408" y="520" name="inst_314A947D" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="368" y="520" name="inst_DB8CC7E8" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -121,11 +120,7 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="obj_item" x="448" y="560" name="inst_9922767F" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="408" y="560" name="inst_2813CEA1" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="368" y="560" name="inst_2DEA0FA9" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="576" y="496" name="inst_C40685FE" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="608" y="496" name="inst_DFE97664" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="608" y="536" name="inst_F4560B70" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="608" y="576" name="inst_B2FFA986" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="576" y="576" name="inst_6C70C4E9" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory_expand" x="576" y="496" name="inst_C40685FE" locked="0" code="val = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="368" y="600" name="inst_2EE8D8F1" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="408" y="600" name="inst_E6086974" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="408" y="480" name="inst_57781F68" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -133,7 +128,6 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="obj_item" x="488" y="480" name="inst_9F7D2813" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="448" y="600" name="inst_E10F0F77" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="488" y="600" name="inst_8067F556" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_expand" x="632" y="536" name="inst_5B91E713" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
