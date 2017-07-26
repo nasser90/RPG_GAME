@@ -92,6 +92,7 @@ if(!jobdone){ // drawing the arrow
             with(instance_create(x,y-65,obj_quest)){
                 missionI = other.missionI;
             }
+            questCre = true;
         }
     } else if (obj_game.mission[missionI] == 1) {
         //draw_sprite(spr_on_quest,0,x,y-65);
