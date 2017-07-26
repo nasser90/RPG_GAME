@@ -108,7 +108,7 @@ if(t&lt;=0 &amp;&amp; !item_added){
   </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>0</PhysicsObjectShape>
+  <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -118,7 +118,9 @@ if(t&lt;=0 &amp;&amp; !item_added){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>32,32</point>
-    <point>32,32</point>
+    <point>16,0</point>
+    <point>48,0</point>
+    <point>48,64</point>
+    <point>16,64</point>
   </PhysicsShapePoints>
 </object>
