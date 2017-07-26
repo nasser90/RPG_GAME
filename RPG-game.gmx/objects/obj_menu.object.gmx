@@ -121,6 +121,8 @@ for(var i=0;i &lt; num_of_grid;i++){
                 }else {
                     itemI =-1;
                 }
+                image_xscale = (x_grid_size - (other.padding*2)) / sprite_width;
+                image_yscale = (y_grid_size  - (other.padding*2)) / sprite_height;
             }
         }
         

@@ -6,7 +6,7 @@ with (txt)
     
     text_num =argument[6];
     var j = 0;
-    for (var i = 0; i < 8;i++){
+    for (var i = 0; i < 9;i++){
         text_next[i] = "";
     }
     for (var i = 7; i < argument_count;i++){
@@ -29,6 +29,10 @@ with (txt)
     boxwidth = text_width + (padding*2);
     boxheight = text_height + (padding*2);
     
+    show_debug_message("text : " + string(text));
+    show_debug_message("-----");
+    show_debug_message("text_next : " + string(text_next[0]));
+    show_debug_message("text-next : " + string(text_next[1]));
 }
 
 
