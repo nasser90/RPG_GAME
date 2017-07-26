@@ -8,7 +8,7 @@ if(input.A && state_time > 30){
 }
 
 if( Aclicked){
-    draw_set_alpha(draw_get_alpha() - 0.01);
+    draw_set_alpha(min(draw_get_alpha() - 0.01,0));
 }
 
 if(draw_get_alpha() ==0){

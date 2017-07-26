@@ -28,6 +28,8 @@
             <string>depth = -2000;
 item_cre = false;
 
+alpha = 0.8;
+
 num_of_grid=ceil(sqrt(obj_game.inventoryM));// how many tiles in each (x-y)-axis
 
 padding = 32;
