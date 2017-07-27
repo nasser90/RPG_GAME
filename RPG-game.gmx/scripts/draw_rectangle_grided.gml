@@ -8,8 +8,10 @@ var Bcol = argument[5];
 var Ocol = argument[6];
 var Gcol = argument[7];
 
+draw_set_alpha(0.30);
 draw_set_colour(Bcol);
 draw_rectangle(_xstart,_ystart,_xend,_yend,0);
+draw_set_alpha(1);
 draw_set_colour(Ocol);
 draw_rectangle(_xstart,_ystart,_xend,_yend,1);
 

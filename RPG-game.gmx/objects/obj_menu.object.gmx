@@ -63,18 +63,18 @@ ey = view_hview[0];
             <kind>1</kind>
             <string>/// drawing the "main" menu
 
-
-draw_set_colour(c_gray);
-draw_rectangle(_x+padding,_y+padding, _x +ex -padding,_y + ey-padding,0);
-draw_set_colour(c_black);
-draw_rectangle(_x+padding,_y+padding,_x + ex-padding,_y + ey-padding,1);
+draw_set_alpha(0.97);
+draw_set_colour(make_colour_rgb(192,192,192));
+draw_roundrect_ext(_x+padding,_y+padding, _x +ex -padding,_y + ey-padding,30,30,0);
+draw_set_colour(make_colour_rgb(128,128,128));
+draw_roundrect_ext(_x+padding,_y+padding,_x + ex-padding,_y + ey-padding,30,30,1);
 
 draw_line(_x + ex / 2, _y + padding ,_x + ex / 2 ,_y + ey - padding);
 /*
 draw_set_colour(make_colour_rgb(150,150,150));
 draw_rectangle(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),0);
 */
-draw_rectangle_grided(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),num_of_grid,make_colour_rgb(150,150,150),c_black,c_white);
+draw_rectangle_grided(_x +(ex/2)+ padding,_y+(padding*2), _x +(ex)-(padding*2), _y + ey-(padding*2),num_of_grid,make_colour_rgb(224,224,224),make_colour_rgb(128,128,128),make_colour_rgb(128,128,128));
 
 
 
