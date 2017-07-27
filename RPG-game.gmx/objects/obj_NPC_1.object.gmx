@@ -55,24 +55,25 @@ InsCre =false; // instance created ?!?
 
 event_inherited();
 
-if(obj_game.mission[missionI] != 1 &amp;&amp; !InsCre){
+if(obj_game.mission[missionI] != 0 &amp;&amp; !InsCre){
     with(instance_create(330,270,transition_system)){
-    room_dist = rm_home_2;
-    x_dist = other.xdist;
-    y_dist = other.ydist;
+        room_dist = rm_home_2;
+        x_dist = other.xdist;
+        y_dist = other.ydist;
     }
-    InsCre= true;
+    InsCre = true;
 }
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
+  <PhysicsObjectDensity>0</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
@@ -80,5 +81,8 @@ if(obj_game.mission[missionI] != 1 &amp;&amp; !InsCre){
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>32,32</point>
+    <point>28,32</point>
+  </PhysicsShapePoints>
 </object>

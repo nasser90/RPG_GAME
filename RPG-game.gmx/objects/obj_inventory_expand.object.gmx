@@ -28,7 +28,7 @@
             <string>t =0; // timer
 image_xscale = 0.8;
 image_yscale = 0.8;
-depth = -1001;
+depth = 0;
 item_added = false;
 val = 1; // the number the inventory will be expanded by
 </string>

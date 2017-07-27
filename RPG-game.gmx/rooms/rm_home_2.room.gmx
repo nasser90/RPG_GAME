@@ -27,7 +27,6 @@ if(obj_game.mission[0] == 1) {
         range = 128;
         xst=224;
         yst=224;
-        obj_game.mission[0]=2;
         timer =0;
     }
     

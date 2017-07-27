@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// creating variables
 
-hp = 0; // health points
+hp = 10; // health points
 spd = 1; // speed which the obj move each frame ( most likely )
 state = "idle"; 
 damage = 2; 

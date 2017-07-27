@@ -29,7 +29,7 @@
 t =0; // timer
 image_xscale = 0.8;
 image_yscale = 0.8;
-depth = -2002;
+depth = -3002;
 </string>
           </argument>
         </arguments>
