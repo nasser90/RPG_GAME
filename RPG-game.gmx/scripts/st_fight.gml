@@ -18,3 +18,15 @@ if(room == 3 and !instance_exists(obj_enemy_base)){ // rm_villagefight = 3
     state_switch(st_ingame);
     room_goto(rm_test);
 }
+
+// Attack
+
+if(input.Z){
+    if(obj_player.sprite_index == spr_player_right){
+        instance_create(obj_player.x+20,obj_player.y,obj_damage);
+    }
+    else if (obj_player.sprite_index == spr_player_left){
+        instance_create(obj_player.x-20,obj_player.y,obj_damage);
+    }
+}
+

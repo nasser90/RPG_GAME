@@ -33,7 +33,7 @@
       <sprite>sprites\spr_water</sprite>
       <sprite>sprites\spr_messagebox</sprite>
       <sprite>sprites\spr_collision_system</sprite>
-      <sprite>sprites\spr_fight</sprite>
+      <sprite>sprites\spr_damage</sprite>
       <sprite>sprites\spr_trans</sprite>
     </sprites>
     <sprite>sprites\spr_gameover</sprite>
@@ -101,7 +101,7 @@
       <object>objects\obj_text</object>
       <object>objects\obj_gameover</object>
       <object>objects\show_info_player</object>
-      <object>objects\obj_fight</object>
+      <object>objects\obj_damage</object>
     </objects>
     <objects name="items">
       <object>objects\obj_menu</object>

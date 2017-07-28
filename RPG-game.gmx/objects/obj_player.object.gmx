@@ -159,18 +159,7 @@ else{
 
 iframes--; 
 
-// Attack
 
-if(input.Z){
-    if(sprite_index == spr_player_right){
-        instance_create(x+20,y,obj_fight);
-    }else{
-        instance_create(x-20,y,obj_fight);
-    }
-}
-if(keyboard_check_released(ord('Z'))){
-    with(obj_fight){ instance_destroy();}
-}
 
 
 
