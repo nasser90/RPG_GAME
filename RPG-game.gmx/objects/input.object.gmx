@@ -36,6 +36,7 @@ left = false;
 // player other inputs
 A = false; // continue , intract , jump  etc
 B = false; // back , attack  etc 
+Z = false;
 
 start = false;
 select = false;
@@ -70,6 +71,7 @@ left = (keyboard_check(ord('A')) || keyboard_check(vk_left));
 
 A = (keyboard_check(ord('J')) || keyboard_check(vk_space));
 B = keyboard_check(ord('K'));
+Z = keyboard_check_pressed(ord('Z'));
 
 start = (keyboard_check(ord('U')) || keyboard_check(vk_escape));
 select = (keyboard_check(ord('I')) || keyboard_check(vk_enter));

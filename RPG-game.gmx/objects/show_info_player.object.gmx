@@ -35,6 +35,11 @@ draw_sprite(spr_level, 0, view_xview[0]+10, view_yview[0]+65);
 draw_text(view_xview[0]+50, view_yview[0]+65, "Level: " + string(obj_player.lv)); // drawing level.
 //draw_rectangle_colour(view_xview[0]+9, view_yview[0]+566.5, view_xview[0]+367, view_yview[0]+694,c_black,c_black,c_black,c_black,false);
 //draw_sprite(spr_map, 0,view_xview[0]+10, view_yview[0]+567); // drawing small map.
+
+// drawing hp enemy
+if(instance_exists(obj_enemy_base)){
+    draw_text(view_xview[0] + 980, view_yview[0]+10, string(obj_enemy_base.hp));
+}
 </string>
           </argument>
         </arguments>

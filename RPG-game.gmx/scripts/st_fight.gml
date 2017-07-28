@@ -1,6 +1,4 @@
-obj_enemy_base.range =2000
-obj_enemy_base.phy_rotation = 0;
-obj_enemy_base.phy_fixed_rotation = true;
+
 obj_player.phy_rotation = 0;
 obj_player.phy_fixed_rotation = true;
 if(input.A)
@@ -12,4 +10,11 @@ if(obj_player.hp<=0){
         state_switch(st_gameover);
     }
  room_goto(rm_gameover);
+}
+
+if(room == 3 and !instance_exists(obj_enemy_base)){ // rm_villagefight = 3
+
+    obj_game.mission[0]=2;
+    state_switch(st_ingame);
+    room_goto(rm_test);
 }

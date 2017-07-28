@@ -10,8 +10,10 @@
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_down</sprite>
       <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_player_right2</sprite>
       <sprite>sprites\spr_player_up</sprite>
       <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_left2</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_quest</sprite>
@@ -31,6 +33,7 @@
       <sprite>sprites\spr_water</sprite>
       <sprite>sprites\spr_messagebox</sprite>
       <sprite>sprites\spr_collision_system</sprite>
+      <sprite>sprites\spr_fight</sprite>
       <sprite>sprites\spr_trans</sprite>
     </sprites>
     <sprite>sprites\spr_gameover</sprite>
@@ -98,6 +101,7 @@
       <object>objects\obj_text</object>
       <object>objects\obj_gameover</object>
       <object>objects\show_info_player</object>
+      <object>objects\obj_fight</object>
     </objects>
     <objects name="items">
       <object>objects\obj_menu</object>
