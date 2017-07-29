@@ -1,8 +1,14 @@
+
+if(!instance_exists(obj_menu)){
+   state_time = 0;
+}
+
 if(state_time==0){
     canMove = false;
     instance_create(0,0,obj_menu);
     draw_set_alpha(0.75);
 }
+
 
 with(obj_menu){
     alpha = min(alpha+0.01,1);
