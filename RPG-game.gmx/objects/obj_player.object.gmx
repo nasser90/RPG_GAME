@@ -32,6 +32,8 @@ jmpspd =3; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
 
+enemy_index = 00000; // the enemy which is going to fight
+
 damage = 1;
 hp = 100; // health points
 lv = 1; // level
@@ -163,7 +165,6 @@ else{
 
 iframes--; 
 
-show_debug_message(string(state));
 
 
 
@@ -256,7 +257,7 @@ else{
 if(global.debug){
     draw_set_colour(c_green);
     //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
-    draw_circle(x, y+12, 20, true);
+    draw_circle(x, y+10, 20, true);
 }
 </string>
           </argument>
@@ -315,7 +316,7 @@ if(global.debug){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>32,44</point>
+    <point>32,40</point>
     <point>20,32</point>
   </PhysicsShapePoints>
 </object>

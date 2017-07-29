@@ -88,6 +88,7 @@
     </objects>
     <objects name="Enemy">
       <object>objects\obj_enemy_base</object>
+      <object>objects\obj_enemy_mis1</object>
     </objects>
     <objects name="game stuff">
       <object>objects\transition_system</object>

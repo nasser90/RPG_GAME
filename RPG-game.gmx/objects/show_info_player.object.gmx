@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-3000</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -34,6 +34,7 @@ draw_text(view_xview[0]+10, view_yview[0]+37, "hp: " + string(obj_player.hp)); /
 draw_sprite(spr_level, 0, view_xview[0]+10, view_yview[0]+65);
 draw_text(view_xview[0]+50, view_yview[0]+65, "Level: " + string(obj_player.lv)); // drawing level.
 draw_text(view_xview[0]+10, view_yview[0]+100, "Experience: " + string(obj_player.expr) +" / "+ string(obj_player.maxExpr));
+draw_text(view_xview[0]+10, view_yview[0]+120, "State: "+ string(obj_game.state));
 //draw_rectangle_colour(view_xview[0]+9, view_yview[0]+566.5, view_xview[0]+367, view_yview[0]+694,c_black,c_black,c_black,c_black,false);
 //draw_sprite(spr_map, 0,view_xview[0]+10, view_yview[0]+567); // drawing small map.
 

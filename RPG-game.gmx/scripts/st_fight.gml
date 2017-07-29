@@ -12,11 +12,20 @@ if(obj_player.hp <= 0){
  room_goto(rm_gameover);
 }
 
-if(room == 3 and !instance_exists(obj_enemy_base)){ // rm_villagefight = 3
+if(room == 3 and !instance_exists(obj_player.enemy_index)){ // rm_villagefight = 3 
 
-    obj_game.mission[0]=2;
-    state_switch(st_ingame);
-    room_goto(rm_test);
+    obj_game.mission[0] = 2;
+    
+    with(instance_create(obj_player.x,obj_player.y,transition_system)){
+        room_dist = rm_home_2;
+                
+        x_dist = 208;
+        y_dist = 352;
+                
+        with(obj_game){
+            state_switch(st_ingame);
+        }
+    }
 }
 
 // Attack

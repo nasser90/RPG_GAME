@@ -56,8 +56,8 @@ y_dist =0; // y dist
             <string>with(other){
     //instance_destroy();
 }
-obj_game.pplayerx=x_dist;
-obj_game.pplayery=y_dist;
+obj_game.pplayerx = x_dist;
+obj_game.pplayery = y_dist;
 
 room_goto(room_dist);
 
