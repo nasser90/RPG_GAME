@@ -32,6 +32,7 @@ jmpspd =3; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
 
+damage = 1;
 hp = 100; // health points
 lv = 1; // level
 expr = 0; // experience points

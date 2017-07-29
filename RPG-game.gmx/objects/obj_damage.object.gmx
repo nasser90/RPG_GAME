@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>damage = 1;
+            <string>
 alarm[0] = 2;
 </string>
           </argument>
@@ -73,7 +73,7 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_enemy_base.hp -= damage;
+            <string>obj_enemy_base.hp -= obj_player.damage;
 </string>
           </argument>
         </arguments>
