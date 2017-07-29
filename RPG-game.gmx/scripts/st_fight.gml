@@ -14,6 +14,10 @@ if(obj_player.hp <= 0){
 
 if(room == 3 and !instance_exists(obj_player.enemy_index)){ // rm_villagefight = 3 
 
+    with(obj_player){
+        iframes = 60;
+    }
+    state_switch(st_ingame);
     obj_game.mission[0] = 2;
     
     with(instance_create(obj_player.x,obj_player.y,transition_system)){
@@ -22,10 +26,9 @@ if(room == 3 and !instance_exists(obj_player.enemy_index)){ // rm_villagefight =
         x_dist = 208;
         y_dist = 352;
                 
-        with(obj_game){
-            state_switch(st_ingame);
-        }
+        
     }
+    
 }
 
 // Attack
