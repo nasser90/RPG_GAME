@@ -256,7 +256,7 @@ else{
 if(global.debug){
     draw_set_colour(c_green);
     //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
-    draw_circle(x+12, y, 20, true);
+    draw_circle(x, y+12, 20, true);
 }
 </string>
           </argument>

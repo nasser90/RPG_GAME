@@ -212,13 +212,14 @@ if(hp &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.debug){
+            <string>draw_self();
+if(global.debug){
     draw_set_colour(c_red){
-        draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1); // x 32 *  y 52
+        draw_rectangle(bbox_left+16,bbox_top+8,bbox_left+48,bbox_top+60,1); // x 32 *  y 52
     }
 }
 
-draw_self();
+
 </string>
           </argument>
         </arguments>
