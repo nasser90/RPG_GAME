@@ -102,6 +102,7 @@
       <object>objects\obj_gameover</object>
       <object>objects\show_info_player</object>
       <object>objects\obj_damage</object>
+      <object>objects\leveling_system</object>
     </objects>
     <objects name="items">
       <object>objects\obj_menu</object>

@@ -33,7 +33,9 @@ cx=0;  // the change of x axis
 cy=0;// the change of y axis
 
 hp = 100; // health points
-lv = 0; // level
+lv = 1; // level
+expr = 0; // experience points
+maxExpr = 8; // max experience points to next level
 onQuest=0;
 
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
@@ -62,7 +64,7 @@ iframes=0; // invornabilty frames, the frames which the obj cant be hit
             <kind>1</kind>
             <string>/// Execute a p of c a pc .. master race mwahahahaha. looks like i am bored i dont have anything to work on i am not going to type my name here sorry looks you are too are bored to read this message till here soooooooooooo here we go we are now 2 not 1 horrrrray .why are you still reading this go do something draw some tiles,sprites,object,scrips,backgrounds, you can do anything and you are still here reading this useless message .If you are going to stay here then you can go and read the message again i cant be here for much longer ,goodbye i have to go D:
 
-if(obj_game.state== st_ingame){   
+if(obj_game.state == st_ingame){   
     switch(state){
         case "idle":{
             image_speed = 0;
@@ -157,9 +159,10 @@ else{
     phy_position_y += cy;
 }
 
+
 iframes--; 
 
-
+show_debug_message(string(state));
 
 
 
@@ -240,7 +243,7 @@ instance_create(10,10,obj_messageBox_nasser);
             <string>
 
 // flashing the obj when he cant be hit
-if(iframes &gt;0 &amp;&amp; iframes % 3 ==0){ 
+if(iframes &gt; 0 &amp;&amp; iframes % 3 ==0){ 
     
 }
 else{
@@ -251,7 +254,8 @@ else{
 
 if(global.debug){
     draw_set_colour(c_green);
-    draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
+    //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
+    draw_circle(x+12, y, 20, true);
 }
 </string>
           </argument>

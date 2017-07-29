@@ -35,7 +35,7 @@ facing = 3; // the direction the obj move at
 range = 64; 
 xst = 0; // the x-axis where the monster starts
 yst = 0; // the y-axis where the monster starts
-timer =0;
+timer = 0;
 
 
 </string>
@@ -137,7 +137,7 @@ if ( instance_exists( obj_player)){
          }
     }
 }
-show_debug_message(string(room_get_name(room)));
+
 if(room == 3){ // rm_villagefight
     range = 2000
     phy_rotation = 0;
@@ -178,14 +178,14 @@ if(hp &lt;= 0){
                 room_dist = rm_villagefight;
                 
                 x_dist = 80;
-                y_dist =300;
+                y_dist = 300;
                 
                 with(obj_game){
                     state_switch(st_fight);
                 }
             } 
         }else {
-            obj_player.hp-=0.1;
+            obj_player.hp -= 0.1;
         
         }       
     }
@@ -214,7 +214,7 @@ if(hp &lt;= 0){
             <kind>1</kind>
             <string>if(global.debug){
     draw_set_colour(c_red){
-        draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
+        draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1); // x 32 *  y 52
     }
 }
 
@@ -237,9 +237,9 @@ draw_self();
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>48,64</point>
-    <point>15,64</point>
-    <point>15,0</point>
-    <point>48,0</point>
+    <point>16,8</point>
+    <point>48,8</point>
+    <point>48,60</point>
+    <point>16,60</point>
   </PhysicsShapePoints>
 </object>

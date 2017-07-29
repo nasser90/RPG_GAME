@@ -3,12 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-3000</depth>
-  <persistent>0</persistent>
+  <depth>0</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,21 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Drawing info of player on the screen.
-
-draw_healthbar(view_xview[0]+35, view_yview[0]+17, view_xview[0]+200, view_yview[0]+32,obj_player.hp, c_white, make_colour_rgb(254,19,19), make_colour_rgb(254,19,19), 0, true, true); // drawing a healthbar.
-draw_sprite(spr_health, 0, view_xview[0]+10, view_yview[0]+8);
-draw_set_colour(c_white); // set color to text.
-draw_text(view_xview[0]+10, view_yview[0]+37, "hp: " + string(obj_player.hp)); // drawing hp in text.
-draw_sprite(spr_level, 0, view_xview[0]+10, view_yview[0]+65);
-draw_text(view_xview[0]+50, view_yview[0]+65, "Level: " + string(obj_player.lv)); // drawing level.
-draw_text(view_xview[0]+10, view_yview[0]+100, "Experience: " + string(obj_player.expr) +" / "+ string(obj_player.maxExpr));
-//draw_rectangle_colour(view_xview[0]+9, view_yview[0]+566.5, view_xview[0]+367, view_yview[0]+694,c_black,c_black,c_black,c_black,false);
-//draw_sprite(spr_map, 0,view_xview[0]+10, view_yview[0]+567); // drawing small map.
-
-// drawing hp enemy
-if(instance_exists(obj_enemy_base)){
-    draw_text(view_xview[0] + 870, view_yview[0]+10, "Enemy hp: "+string(obj_enemy_base.hp));
+            <string>//
+if(instance_exists(obj_player)){
+    if(obj_player.expr == obj_player.maxExpr){
+        obj_player.lv += 1;
+        obj_player.expr = 0;
+        obj_player.maxExpr *= 2;
+    }
 }
 </string>
           </argument>
