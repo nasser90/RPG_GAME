@@ -74,6 +74,16 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>obj_enemy_base.hp -= obj_player.damage;
+if(obj_player.sprite_index == spr_player_right){
+        obj_enemy_base.iframes=15;
+        obj_enemy_base.m_hit=1;
+        obj_enemy_base.phy_position_x +=40;
+    }
+    else if (obj_player.sprite_index == spr_player_left){
+        obj_enemy_base.iframes=15;
+        obj_enemy_base.m_hit=1;
+        obj_enemy_base.phy_position_x -=40;
+    }
 </string>
           </argument>
         </arguments>

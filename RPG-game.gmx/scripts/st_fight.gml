@@ -6,9 +6,8 @@ if(input.A)
     obj_player.phy_position_y += -obj_player.jmpspd;
 }
 if(obj_player.hp <= 0){
-    with(obj_game){
-        state_switch(st_gameover);
-    }
+    state_switch(st_gameover);
+
  room_goto(rm_gameover);
 }
 

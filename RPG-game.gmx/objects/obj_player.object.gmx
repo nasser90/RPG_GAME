@@ -28,7 +28,7 @@
             <string>/// creating variables
 state = "idle"; // Example attack,move,idle
 spd = 4; // the speed the char moves at
-jmpspd =3; // Jump speed
+jmpspd =20; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
 
@@ -40,7 +40,7 @@ lv = 1; // level
 expr = 0; // experience points
 maxExpr = 8; // max experience points to next level
 onQuest=0;
-
+p_hit =0; //flag for hitting the player
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
 
 </string>
@@ -244,6 +244,8 @@ instance_create(10,10,obj_messageBox_nasser);
             <kind>1</kind>
             <string>
 
+
+
 // flashing the obj when he cant be hit
 if(iframes &gt; 0 &amp;&amp; iframes % 3 ==0){ 
     
@@ -255,9 +257,25 @@ else{
 // drawing the hbox
 
 if(global.debug){
+    draw_sprite(spr_hit,0,x,y);
     draw_set_colour(c_green);
     //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);
     draw_circle(x, y+10, 20, true);
+    
+}
+
+if(obj_game.state == st_fight) {
+    if(p_hit==1)
+    {
+        draw_self();
+        draw_sprite(spr_hit,0,x,y);
+        draw_set_colour(c_red);
+        draw_text(x-10,y-60,"-1");
+        
+    }
+    if(iframes &lt;=0){
+        p_hit=0;
+    }
 }
 </string>
           </argument>
