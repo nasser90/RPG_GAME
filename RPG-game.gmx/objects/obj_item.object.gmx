@@ -31,6 +31,7 @@ image_xscale = 0.8;
 image_yscale = 0.8;
 depth = 0;
 item_added = false;
+
 </string>
           </argument>
         </arguments>

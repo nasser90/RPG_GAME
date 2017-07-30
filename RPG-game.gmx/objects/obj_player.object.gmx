@@ -28,7 +28,7 @@
             <string>/// creating variables
 state = "idle"; // Example attack,move,idle
 spd = 4; // the speed the char moves at
-jmpspd =20; // Jump speed
+jmpspd = 3; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
 
@@ -166,7 +166,12 @@ else{
 iframes--; 
 
 
+// Jump
 
+if(keyboard_check(vk_space) and room == 3) // rm_villagefight = 3
+{
+    obj_player.phy_position_y += -jmpspd;
+}
 
 </string>
           </argument>

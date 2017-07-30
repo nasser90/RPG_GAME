@@ -110,7 +110,7 @@ if(input.A){
         inhand = selected;
     }
     else{
-        if(selected &lt;= obj_game.inventoryM){
+        if(selected &lt; obj_game.inventoryM){
             scr_item_move(inhand,selected);
             inhand = -1;
         }
