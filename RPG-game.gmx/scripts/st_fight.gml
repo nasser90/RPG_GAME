@@ -18,14 +18,19 @@ if(room == 3 and !instance_exists(obj_player.enemy_index)){ // rm_villagefight =
         iframes = 60;
     }
     state_switch(st_ingame);
-    obj_game.mission[0] = 2;
+    
     
     with(instance_create(obj_player.x,obj_player.y,transition_system)){
-        room_dist = rm_home_2;
-                
-        x_dist = 208;
-        y_dist = 352;
-                
+        if(obj_player.enemy_index == obj_enemy_mis1){
+            room_dist = rm_home_2;
+            x_dist = 208;
+            y_dist = 352;
+            obj_game.mission[0] = 2;
+        }else{
+            room_dist = rm_test;
+            x_dist = 208;
+            y_dist = 352;
+        }
         
     }
     
