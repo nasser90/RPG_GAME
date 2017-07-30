@@ -111,7 +111,7 @@ with (instance_create(256,384,obj_enemy_base)){
     <instance objName="collision_system" x="320" y="0" name="inst_697E00EF" locked="0" code="" scaleX="0.375" scaleY="1.625" colour="4294967295" rotation="0"/>
     <instance objName="collision_system" x="320" y="104" name="inst_84D64612" locked="0" code="" scaleX="0.875" scaleY="0.375" colour="4294967295" rotation="0"/>
     <instance objName="show_info_player" x="56" y="136" name="inst_3C1660A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_item" x="368" y="480" name="inst_620AF725" locked="0" code="itemI = 2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item" x="368" y="480" name="inst_620AF725" locked="0" code="itemI = 2;&#xA;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="448" y="520" name="inst_C2555FC3" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="488" y="520" name="inst_8C346DB4" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_item" x="408" y="520" name="inst_314A947D" locked="0" code="itemI = 1;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
