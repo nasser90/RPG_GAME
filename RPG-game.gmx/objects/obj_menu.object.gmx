@@ -260,10 +260,10 @@ var xs = _x +(ex/2)+ padding +(selected % num_of_grid)*x_grid_size;
 var ys = _y+(padding*2) + (floor(selected / num_of_grid))*y_grid_size;
 
 draw_set_colour(c_green);
-for(var i =1;i&lt; 4;i++){
-    draw_rectangle( xs + i , ys + i , xs + x_grid_size - i, ys + y_grid_size - i, 1 );
-
+for(var i =10;i&lt; 14;i++){
+    draw_roundrect_ext( xs + i , ys + i , xs + x_grid_size - i, ys + y_grid_size - i,8,8, 1 );
 }
+
 
 
 </string>

@@ -10,10 +10,10 @@ var Gcol = argument[7];
 
 draw_set_alpha(0.30);
 draw_set_colour(Bcol);
-draw_rectangle(_xstart,_ystart,_xend,_yend,0);
+draw_roundrect_ext(_xstart,_ystart,_xend,_yend,16,16,0);
 draw_set_alpha(1);
 draw_set_colour(Ocol);
-draw_rectangle(_xstart,_ystart,_xend,_yend,1);
+draw_roundrect_ext(_xstart,_ystart,_xend,_yend,16,16,1);
 
 draw_set_colour(Gcol);
 
