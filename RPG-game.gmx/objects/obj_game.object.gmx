@@ -31,8 +31,17 @@ state_int();
 
 global.debug = false;
 
-inRoom =0;
-canMove = true;
+player = 0; // the instance of the player obj
+
+for(var i =0;i&lt;5;i++){
+    enemy[i] = 0; // the instance of the enemy obj
+}
+
+num_of_stats = 3;
+num_of_enemys = 1;
+
+inRoom =0; // the room the player is in
+canMove = true; // if the player can move or not
 
 pplayerx =40;
 pplayery = 350;
@@ -48,8 +57,23 @@ for(var i=0;i&lt;inventoryMM;i++){
     inventory[i] =0;// 0 nothing , 1 sword?!? , 
 }
 
+attack[0,0] =1; // 1st num { 0 : dmg of the attack, 1 : the name of tht attack, 2 : the type of the attack} 
+attack[0,1] =2; // 2nd num : the index of the attack
+attack[1,0] ="punch";
+attack[1,1] ="kick";
+attack[2,0] =0; // types { 0 : normal , 1 : bleeding , 2 : blunt }
+attack[2,1] =0;
+attack[3,0] = false; // if the attack is Aoe (hit all the enemys) or not
+attack[3,1] = false;
 
 
+intext = 0;
+
+for(var i =0;i&lt;10;i++){
+    text[i] = -1;
+}
+
+fight_option =0;
 </string>
           </argument>
         </arguments>
@@ -74,6 +98,7 @@ for(var i=0;i&lt;inventoryMM;i++){
             <kind>1</kind>
             <string>state_process(st_title);
 
+show_debug_message("num of instance of obj_text : " + string(instance_number(obj_text)));
 </string>
           </argument>
         </arguments>

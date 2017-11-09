@@ -62,7 +62,9 @@ instance_create(896, 512, obj_player.enemy_index);</code>
     <instance objName="collision_system" x="1017" y="377" name="inst_47E2CF15" locked="0" code="" scaleX="1.12698411941528" scaleY="3.890625" colour="4294967295" rotation="0"/>
     <instance objName="show_info_player" x="0" y="0" name="inst_BA79C1F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="background0" x="192" y="-128" w="64" h="64" xo="832" yo="64" id="10000526" name="inst_F80BD3AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

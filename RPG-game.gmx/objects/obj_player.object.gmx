@@ -32,9 +32,10 @@ jmpspd = 3; // Jump speed
 cx=0;  // the change of x axis
 cy=0;// the change of y axis
 
+name = "player";
+
 enemy_index = 00000; // the enemy which is going to fight
 
-damage = 1;
 hp = 100; // health points
 lv = 1; // level
 expr = 0; // experience points
@@ -43,6 +44,25 @@ onQuest=0;
 p_hit =0; //flag for hitting the player
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
 
+// stat
+stat[0,0] = 5; // damage stat
+stat[0,1] = 2; // defense stat
+stat[0,2] = 1; // speed stat
+
+// boost
+stat[1,0] = 0; // damage boost
+stat[1,1] = 0; // defense boost
+stat[1,2] = 0; // speed boost
+
+// boost duration
+stat[2,0] = 0; // damage boost duration
+stat[2,1] = 0; // defense boost duration
+stat[2,2] = 0; // speed boost duration
+
+attack[0] = 0; // the index of the attack
+attack[1] = 1; 
+attack[2] = 0;
+attack[3] = 0;
 </string>
           </argument>
         </arguments>

@@ -4,7 +4,7 @@ txt = instance_create(argument[2],argument[3],obj_text);
 with (txt)
 {
     
-    text_num =argument[6];
+    text_num = argument[6];
     var j = 0;
     for (var i = 0; i < 9;i++){
         text_next[i] = "";
@@ -28,11 +28,6 @@ with (txt)
     
     boxwidth = text_width + (padding*2);
     boxheight = text_height + (padding*2);
-    
-    show_debug_message("text : " + string(text));
-    show_debug_message("-----");
-    show_debug_message("text_next : " + string(text_next[0]));
-    show_debug_message("text-next : " + string(text_next[1]));
 }
 
 

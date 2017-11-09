@@ -62,24 +62,7 @@ select = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if((obj_game.state == st_ingame) || (obj_game.state == st_fight)){
-    up = (keyboard_check(ord('W')) || keyboard_check(vk_up));
-    right = (keyboard_check(ord('D')) || keyboard_check(vk_right));
-    down = (keyboard_check(ord('S')) || keyboard_check(vk_down));
-    left = (keyboard_check(ord('A')) || keyboard_check(vk_left));
-}
-if(obj_game.state == st_item_menu){
-    up = (keyboard_check_released(ord('W')) || keyboard_check_released(vk_up));
-    right = (keyboard_check_released(ord('D')) || keyboard_check_released(vk_right));
-    down = (keyboard_check_released(ord('S')) || keyboard_check_released(vk_down));
-    left = (keyboard_check_released(ord('A')) || keyboard_check_released(vk_left));
-}
-A = (keyboard_check_released(ord('J')) || keyboard_check_released(vk_space));
-B = keyboard_check_released(ord('K'));
-Z = keyboard_check_pressed(ord('Z'));
-
-start = (keyboard_check_released(ord('U')) || keyboard_check_released(vk_escape));
-select = (keyboard_check_released(ord('I')) || keyboard_check_released(vk_enter));
+            <string>check_input();
 </string>
           </argument>
         </arguments>

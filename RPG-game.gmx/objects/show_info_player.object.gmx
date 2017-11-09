@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Drawing info of player on the screen.
-
+draw_set_font(fnt_default);
 draw_healthbar(view_xview[0]+35, view_yview[0]+17, view_xview[0]+200, view_yview[0]+32,obj_player.hp, c_white, make_colour_rgb(254,19,19), make_colour_rgb(254,19,19), 0, true, true); // drawing a healthbar.
 draw_sprite(spr_health, 0, view_xview[0]+10, view_yview[0]+8);
 draw_set_colour(c_white); // set color to text.

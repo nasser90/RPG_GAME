@@ -39,6 +39,26 @@ m_hit =0; //flag for hitting the enemy
 iframes=0; // invornabilty frames, the frames which the obj cant be hit
 timer = 0;
 
+name = "enemy";
+
+for(var i =0;i&lt;4;i++){
+    attack[i] = 0; // the attacks that the enemy can use
+}
+
+// stat
+stat[0,0] = 5; // damage stat
+stat[0,1] = 2; // defense stat
+stat[0,2] = 1; // speed stat
+
+// boost
+stat[1,0] = 0; // damage boost
+stat[1,1] = 0; // defense boost
+stat[1,2] = 0; // speed boost
+
+// boost duration
+stat[2,0] = 0; // damage boost duration
+stat[2,1] = 0; // defense boost duration
+stat[2,2] = 0; // speed boost duration
 
 
 </string>
@@ -67,10 +87,12 @@ timer = 0;
 if ( instance_exists( obj_player)){
     if(distance_to_object(obj_player) &lt;= range){
         if(obj_game.state != st_fight){
-            if(abs(obj_player.phy_position_x-phy_position_x)&gt;=abs(obj_player.phy_position_y-phy_position_y)){
-                phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
-            }else{
-                phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
+            if(obj_game.state == st_ingame){
+                if(abs(obj_player.phy_position_x-phy_position_x)&gt;=abs(obj_player.phy_position_y-phy_position_y)){
+                    phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
+                }else{
+                    phy_position_y = movetoward( phy_position_y,obj_player.phy_position_y,spd);
+                }
             }
         }else{
             phy_position_x = movetoward( phy_position_x,obj_player.phy_position_x,spd);
@@ -151,7 +173,7 @@ if(hp &lt;= 0){
     instance_destroy();
 }
 
-show_debug_message(object_get_name(object_index));
+//show_debug_message(object_get_name(object_index));
 
 iframes--;
 </string>
@@ -179,7 +201,19 @@ iframes--;
             <string>obj_player.enemy_index = object_index;
 
 with(other){
+    var pl = self;
+    var en = other;
     if(iframes &lt;= 0){
+        with (obj_game){
+            if(state != st_turn_based_fight){
+                enemy[0] = en;
+                player = pl;
+                state_switch(st_turn_based_fight);
+            }
+        }
+    }
+    
+    /*
         if(obj_game.state != st_fight){
             with(instance_create(phy_position_x,phy_position_y,transition_system)){
                 obj_player.sprite_index = spr_player_right;
@@ -206,8 +240,9 @@ with(other){
                 obj_player.phy_position_x +=40;    
             }
         
-        }       
-    }
+        }  
+        */     
+    
 }
 </string>
           </argument>

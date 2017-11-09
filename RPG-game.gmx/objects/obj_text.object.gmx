@@ -36,6 +36,40 @@ tick = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+if(text_num == 1){
+    for(var i=0;i&lt; 15;i++){
+        with(obj_game){
+            if(text[i] == -1){
+                show_debug_message("123");
+                text[i] = 0;
+                break;
+            }
+        }
+    }
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -120,36 +154,53 @@ draw_set_alpha(1);
           <argument>
             <kind>1</kind>
             <string>/// check for player input
-if(input.B &amp;&amp; tick &gt;= 5){
-    if(time &gt;= text_length ){
-        if(text_next[0] == ""){
-            obj_game.canMove = true;
-            talking = 0;
+if(text_num ==0){
+    if(input.B &amp;&amp; tick &gt;= 5){
+        if(time &gt;= text_length ){
+            if(text_next[0] == ""){
+                obj_game.canMove = true;
+                talking = 0;
+            }
+            else{
+                scr_text(
+                text_next[0],
+                spd,
+                x,
+                y,
+                maxlength,
+                font,
+                text_num,
+                text_next[1],
+                text_next[2],
+                text_next[3],
+                text_next[4],
+                text_next[5],
+                text_next[6],
+                text_next[7],
+                text_next[8]
+                );
+            }
+            instance_destroy();
         }
-        else{
-            scr_text(
-            text_next[0],
-            spd,
-            x,
-            y,
-            maxlength,
-            font,
-            text_num,
-            text_next[1],
-            text_next[2],
-            text_next[3],
-            text_next[4],
-            text_next[5],
-            text_next[6],
-            text_next[7],
-            text_next[8]
-            );
+    }
+}
+else if (text_num ==1){
+    with(obj_game){
+        for(var i =0;i&lt; 10;i++){
+            if(text[i] == other) break;          
+            if(text[i] == -1) {
+            text[i] = other;
+            break;
+            }
         }
+    }
+}
+else if(text_num = 2){
+    obj_game.fight_time = 10;
+    if(input.A) &amp;&amp; (tick &gt;= 10){
         instance_destroy();
     }
 }
-
-
 </string>
           </argument>
         </arguments>

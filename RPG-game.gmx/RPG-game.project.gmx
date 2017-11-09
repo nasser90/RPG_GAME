@@ -69,6 +69,7 @@
         <script>scripts\st_item_menu.gml</script>
         <script>scripts\st_fight.gml</script>
         <script>scripts\st_gameover.gml</script>
+        <script>scripts\st_turn_based_fight.gml</script>
       </scripts>
     </scripts>
     <script>scripts\scr_text.gml</script>
@@ -77,9 +78,18 @@
     <scripts name="item">
       <script>scripts\scr_item_move.gml</script>
     </scripts>
+    <scripts name="fight">
+      <script>scripts\fight_attack.gml</script>
+      <script>scripts\fight_boost.gml</script>
+      <script>scripts\fight_int.gml</script>
+      <script>scripts\fight_choose_attack.gml</script>
+      <script>scripts\fight_input.gml</script>
+    </scripts>
+    <script>scripts\check_input.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
+    <font>fonts\fnt_test</font>
   </fonts>
   <objects name="objects">
     <objects name="NPC">
